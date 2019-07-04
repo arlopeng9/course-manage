@@ -2,6 +2,7 @@
 include_once 'inc/config.inc.php';
 include_once 'inc/mysql.inc.php';
 include_once 'inc/tool.inc.php';
+include_once 'inc/page.inc.php';
 
 $link=connect();
 $member_id=is_login($link);
@@ -18,17 +19,8 @@ $query="select * from CM_course where course_id='{$course_id}'";
     $teacher=mysqli_fetch_array($result);
     
    $adress='course7.php';
-   if(isset($_POST['submit'])){
-       if($_POST['content']==NULL){
-           skip($adress,'error','评论不能为空');}
-           
+   include_once 'index.inc/index1.inc.php';
    
-   }
-
-   if(@$_COOKIE['cookie']['name']!=NULL){
-   $query="select * from CM_student where register_name='{$_COOKIE['cookie']['name']}'";
-   $result=execute($link,$query);
-   $student_course=mysqli_fetch_array($result);}
 ?>
 
 <?php include_once 'inc/head.inc.php';
@@ -156,19 +148,8 @@ $query="select * from CM_course where course_id='{$course_id}'";
                         <div class="single-blog">
                             <img src="https://edu-image.nosdn.127.net/6CE1F9C631F5BA4EF0FADE575E526585.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" style="width: 550px;height:350px">
                             <div class="blog-content">
-                               <h1><label><?php echo $course['course_name'] ?></label><label style="margin-left: 300px" ><?php  echo $course['course_score'];?></label> </h1>
-                                <h4>
-                           <label>学类： <?php echo $course['course_type'] ?></label>
-                            <label>老师：<?php echo $teacher['teacher_name']?></label>
-                           <label>课程ID：<?php echo $course['course_id'] ?></label></h4>
-                                <div class="meta">
-                                   
-                                    <span><i class="fa fa-calender"></i>June 19</span>
-                                    <span><i class="fa fa-comments"></i>65 Comments</span>
-									<button  class="travel-booking-btn hvr-shutter-out-horizontal" type="submit" name="xuanke" style="margin-left: 300px;"><?php 
-                                    if(@$_COOKIE['cookie']['name']==NULL){echo '选择课程';}else{$query="select*from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}'";
-   $result_name=execute($link,$query); if(mysqli_fetch_assoc($result_name)){echo '已选';}else{echo '选择课程';}}?></button>
-                                </div>
+                               <?php include_once 'index.inc/index2.inc.php';?>
+                               
                                 <p>航空航天是二十世纪以来发展最为迅速、应用最为广泛、对人类社会生活影响最大的科技领域之一。 航空航天概论将为大家展示航空航天发展的壮丽史诗和人类探索太空的艰辛历程，通过航空航天基本知识和飞行器科学与技术的学习，领略航空航天的魅力，体会人类不断探索的奋斗精神，畅想太空的奥秘和未来。</p>
                                 <p><strong>课程概论</strong>
                                 </p>
@@ -189,63 +170,7 @@ $query="select * from CM_course where course_id='{$course_id}'";
                         </div><!--/ End Single blog -->
 
                        <!-- Blog Comment Wrappper-->
-                        <div class="commnet-wrapper">
-                            <div class="items_title">
-                                <h3 class="title">课程评论</h3>
-                            </div>
-                             <div class="comment-list-items">
-                                <div class="comment-list-wrapper">
-                                       <label style="margin-left: 30px;"><h1>分数：<?php echo $course['course_score']?></h1></label>
-                              <?php if(@$_COOKIE['cookie']['name']!=NULL){
-                                 $query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";
-                                   $result=execute($link,$query);
-                                   
-                                    if($data=mysqli_fetch_assoc($result)){
-                                ?>
-                                <Form method="post">
-                             <span>  <br><input type="text" name="content"></span>
-                                  
-                                <br><input type="submit" value="提交评论"name="submit">
-                                    <input type="button" value="课程打分" name="submit2"><br>
-                                   </Form> 
-                                   <?php }}else {?>
-                                    <button  class="king-btn-demo king-btn king-success"  name="submit3" style="margin-left: 450px;">评论</button>
-                                  <?php }?>
-                                  <?php 
-                                  if(isset($_POST['submit'])){
-                                      
-                                          $time=date('20y年m月d日', time());
-                                          echo $time;
-                                          @$query="insert into CM_comment (course_id,student_name,comment_time,comment_quality,comment_content,comment_photo) values('{$course['course_id']}',
-                                          '{$student_course['student_name']}','{$time}','','{$_POST['content']}','')";
-                                          execute($link,$query);
-                                          skipto($adress,'ok','登录成功！');
-                                           
-                                  }
-                                
-  ?>
-
-                   
-                                </div>
-                                <div class="comment-list-wrapper">
-                                   
-                                        
-                                <?php  $query="select 
-course_id,student_name,comment_time,comment_quality,comment_content,comment_photo from CM_comment where course_id ='{$course_id}' order by commentID desc";
-			$result_content=execute($link,$query);
-			while($data_content=mysqli_fetch_assoc($result_content)){?>
-								
-							<div class="king-instruction  king-instruction-info ">
-                                <br><label><h3><?php echo $data_content['student_name' ];?></h3></label> 
-                                 <label style="padding-left:20px"><?php echo $data_content['comment_time'];?></label> 
-                                  <label style="padding-left:20px">情绪：<?php echo $data_content['comment_quality'];?></label> 
-                                 
-								<br><label><?php echo $data_content['comment_content'];?>  </label>
-                                    </div>
-								<?php }?>                              
-                                   
-                                </div>
-                            </div> 
+                        <?php include_once 'index.inc/index3.inc.php';?>
 							
                             <!--  Leave Commnent Wrapper -->
                    </div>
@@ -360,7 +285,7 @@ course_id,student_name,comment_time,comment_quality,comment_content,comment_phot
                       </div>
                   </div><!-- ./ End  Blog Right Wrapper--><!-- ./ End  Blog Right Wrapper-->
            
-        </div></div>
+        </div>
     </section>
 
 
