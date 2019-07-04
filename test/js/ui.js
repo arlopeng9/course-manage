@@ -1,5 +1,5 @@
 ﻿var mizhu = new function() {
-	this.width = $(window).width() * 0.3;
+	this.width = $(window).width() * 0.375;
 	this.height = 300;
 
 	this.close = function() {
@@ -34,7 +34,7 @@
 		}
 		if(valempty(title)) {
 			jq.find(".title").remove();
-			jq.find(".window-panel .body-panel").css("border-radius", "5px");
+			jq.find(".window-panel .body-panel").css("border-radius", "4px");
 		} else {
 			jq.find(".title").find(":header").html(title);
 		}
@@ -60,7 +60,7 @@
 	this.alert = function(title, message, ico) {
 		var icon = "";
 		if(!valempty(ico)) {
-			icon = '<p class="btns" style="margin-bottom:-15px;"><img width="70px" height="70px" src="img/' + ico + '.png"></p>';
+			icon = '<p class="btns" style="margin-bottom:-15px;"><img width="70px" height="70px" src="images/' + ico + '.png"></p>';
 		}
 		var html = '<div class="win"><div class="mask-layer"></div><div class="window-panel"><iframe class="title-panel" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe><div class="title"><h3></h3></div><div class="body-panel">' + icon + '<p class="content"></p><p class="btns"><button class="w-btn" tabindex="1" onclick="mizhu.close();">确定</button></p></div></div></div>';
 		messageBox(html, title, message);

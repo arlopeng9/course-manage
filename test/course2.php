@@ -2,7 +2,7 @@
 include_once 'inc/config.inc.php';
 include_once 'inc/mysql.inc.php';
 include_once 'inc/tool.inc.php';
-
+include_once 'inc/page.inc.php';
 $link=connect();
 $member_id=is_login($link);
 $template['css']=array('style/public.css');
@@ -10,25 +10,9 @@ foreach ($template['css'] as $val){
     echo "<link rel='stylesheet' type='text/css' href='{$val}' />";
 }
 $course_id='20182022194';
-$query="select * from CM_course where course_id='{$course_id}'";
-    $result=execute($link,$query);
-    $course=mysqli_fetch_array($result);
-    $query="select * from CM_teacher where tID='{$course['tID']}'";
-    $result=execute($link,$query);
-    $teacher=mysqli_fetch_array($result);
-    
-   $adress='course2.php';
-   if(isset($_POST['submit'])){
-       if($_POST['content']==NULL){
-           skip($adress,'error','评论不能为空');}
-           
-   
-   }
+$adress='course2.php';
 
-   if(@$_COOKIE['cookie']['name']!=NULL){
-   $query="select * from CM_student where register_name='{$_COOKIE['cookie']['name']}'";
-   $result=execute($link,$query);
-   $student_course=mysqli_fetch_array($result);}
+include_once 'index.inc/index1.inc.php';
 ?>
 
 <?php include_once 'inc/head.inc.php';
@@ -146,9 +130,7 @@ $query="select * from CM_course where course_id='{$course_id}'";
             </div>
         </div>
     </section><!-- blog breadcrumb version one end here -->
-
-    <!-- Start blog -->
-    <section id="blog" class="section-paddings single section page blog_wrapper">
+<section id="blog" class="section-paddings single section page blog_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-12 col-xs-12">
@@ -156,19 +138,8 @@ $query="select * from CM_course where course_id='{$course_id}'";
                         <div class="single-blog">
                             <img src="https://edu-image.nosdn.127.net/76F0C19078017F0FA44FFBA7A6B83E9B.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" style="width: 550px;height:350px">
                             <div class="blog-content">
-                              <h1><label><?php echo $course['course_name'] ?></label><label style="margin-left: 300px" ><?php  echo $course['course_score'];?></label> </h1>
-                                <h4>
-                           <label>学类： <?php echo $course['course_type'] ?></label>
-                            <label>老师：<?php echo $teacher['teacher_name']?></label>
-                           <label>课程ID：<?php echo $course['course_id'] ?></label></h4>
-                                <div class="meta">
-                                   
-                                    <span><i class="fa fa-calender"></i>June 19</span>
-                                    <span><i class="fa fa-comments"></i>65 Comments</span>
-									<button  class="travel-booking-btn hvr-shutter-out-horizontal" type="submit" name="xuanke" style="margin-left: 300px;"><?php 
-                                    if(@$_COOKIE['cookie']['name']==NULL){echo '选择课程';}else{$query="select*from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}'";
-   $result_name=execute($link,$query); if(mysqli_fetch_assoc($result_name)){echo '已选';}else{echo '选择课程';}}?></button>
-                                </div>
+    <!-- Start blog -->
+    <?php include_once 'index.inc/index2.inc.php';?>
                                 <p>物联网作为电子信息前沿技术，发展前景十分广阔。本课程由物联网国家共享课程资源库团队精心打造，以丰富、生动的课程资源，为初次接触物联网的您解答“物联网的内涵、物联网关键技术及应用领域、物联网应用技术人才能力需求”等困惑，激发对物联网的兴趣，同时培养物联网系统思维方式和创新意识。</p>
                                 <p><strong>课程概论</strong>
                                 </p>
@@ -194,64 +165,8 @@ $query="select * from CM_course where course_id='{$course_id}'";
                         </div><!--/ End Single blog -->
 
                       <!-- Blog Comment Wrappper-->
-                        <div class="commnet-wrapper">
-                            <div class="items_title">
-                                <h3 class="title">课程评论</h3>
-                            </div>
-                             <div class="comment-list-items">
-                                <div class="comment-list-wrapper">
-                                       <label style="margin-left: 30px;"><h1>分数：<?php echo $course['course_score']?></h1></label>
-                              <?php if(@$_COOKIE['cookie']['name']!=NULL){
-                                 $query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";
-                                   $result=execute($link,$query);
-                                   
-                                    if($data=mysqli_fetch_assoc($result)){
-                                ?>
-                                <Form method="post">
-                             <span>  <br><input type="text" name="content"></span>
-                                  
-                                <br><input type="submit" value="提交评论"name="submit">
-                                    <input type="button" value="课程打分" name="submit2"><br>
-                                   </Form> 
-                                   <?php }}else {?>
-                                    <button  class="king-btn-demo king-btn king-success"  name="submit3" style="margin-left: 450px;">评论</button>
-                                  <?php }?>
-                                  <?php 
-                                  if(isset($_POST['submit'])){
-                                      
-                                          $time=date('20y年m月d日', time());
-                                          echo $time;
-                                          @$query="insert into CM_comment (course_id,student_name,comment_time,comment_quality,comment_content,comment_photo) values('{$course['course_id']}',
-                                          '{$student_course['student_name']}','{$time}','','{$_POST['content']}','')";
-                                          execute($link,$query);
-                                          skipto($adress,'ok','登录成功！');
-                                           
-                                  }
-                                
-  ?>
-
-                   
-                                </div>
-                                <div class="comment-list-wrapper">
-                                   
-                                        
-                                <?php  $query="select 
-course_id,student_name,comment_time,comment_quality,comment_content,comment_photo from CM_comment where course_id ='{$course_id}' order by commentID desc";
-			$result_content=execute($link,$query);
-			while($data_content=mysqli_fetch_assoc($result_content)){?>
-								
-								<div class="king-instruction  king-instruction-info ">
-                                <br><label><h3><?php echo $data_content['student_name' ];?></h3></label> 
-                                 <label style="padding-left:20px"><?php echo $data_content['comment_time'];?></label> 
-                                  <label style="padding-left:20px">情绪：<?php echo $data_content['comment_quality'];?></label> 
-                                 
-								<br><label><?php echo $data_content['comment_content'];?>  </label>
-                                    </div>
-								<?php }?>                              
-                                   
-                                </div>
-                            </div> 
-							
+                        
+							 <?php include_once 'index.inc/index3.inc.php';?>
                             <!--  Leave Commnent Wrapper -->
                    </div>
                   </div>

@@ -31,7 +31,10 @@ $php='xuanze';
     <link rel="stylesheet" href="../assets/css/layui.css">
     <link rel="stylesheet" href="../assets/css/view.css"/>
     <link rel="icon" href="/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" />
     <title>管理后台</title>
+    <script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/ui.js"></script>
     <script type="text/javascript" src="admin/pagination.js"></script>
     <script type="text/javascript">
         //全局变量
@@ -139,7 +142,8 @@ $php='xuanze';
 			$return_url=urlencode($_SERVER['REQUEST_URI']);
 			$message="你真的要选择这门课嘛 {$data['course_name']} 吗？";
 			$add_url="confirm.php?url={$url}&return_url={$return_url}&message={$message}";
-			
+			$info_url="courseinfo.php?cID={$data['cID']}";
+				
 		
 			
 $html=<<<A
@@ -148,7 +152,8 @@ $html=<<<A
 				<td></br><h5>{$M['course_name']}[cID:{$M['cID']}]</h5></td>
 				                            <td></br><h5>{$T['teacher_name']}</h5></td>
 				                            <td></br><h5>{$M['course_college']}</h5></td>
-				<td></br><a href="javascript:course();"><h5>[查看详细]</h5></a><a href="$add_url"><h5>[选课]</h5></a></td>
+				<td></br><div class="alert open" style="color:#00F" onclick="mizhu.open(200, 450, '</br>课程详情', '$info_url');"><h5>[查看详细]</h5></div><a href="$add_url"><h5>[撤课]</h5></a></td>
+		                                    
 			</tr>
 				
 A;
@@ -169,7 +174,8 @@ A;
 			$return_url=urlencode($_SERVER['REQUEST_URI']);
 			$message="你真的要选择这门课嘛 {$data['course_name']} 吗？";
 			$add_url="confirm.php?url={$url}&return_url={$return_url}&message={$message}";
-			
+			$info_url="courseinfo.php?cID={$data['cID']}";
+				
 		
 			
 $html=<<<A
@@ -178,7 +184,8 @@ $html=<<<A
 				<td></br><h5>{$M['course_name']}[cID:{$M['cID']}]</h5></td>
 				                            <td></br><h5>{$T['teacher_name']}</h5></td>
 				                            <td></br><h5>{$M['course_college']}</h5></td>
-				<td></br><a href="javascript:course();"><h5>[查看详细]</h5></a><a href="$add_url"><h5>[选课]</h5></a></td>
+				<td></br><div class="alert open" style="color:#00F" onclick="mizhu.open(200, 450, '</br>课程详情', '$info_url');"><h5>[查看详细]</h5></div><a href="$add_url"><h5>[撤课]</h5></a></td>
+		                                    
 			</tr>
 				
 A;
