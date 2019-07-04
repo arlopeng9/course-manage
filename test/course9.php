@@ -9,7 +9,7 @@ $template['css']=array('style/public.css');
 foreach ($template['css'] as $val){
     echo "<link rel='stylesheet' type='text/css' href='{$val}' />";
 }$course_id='20182023104';
-$adress='course9.php';
+$adress='course9.php ';
 
 include_once 'index.inc/index1.inc.php';
 ?>
@@ -279,7 +279,7 @@ include_once 'index.inc/index1.inc.php';
                       </div>
                   </div><!-- ./ End  Blog Right Wrapper--><!-- ./ End  Blog Right Wrapper-->
            
-        </div></div>
+        </div>
     </section>
 
 

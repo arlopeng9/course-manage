@@ -134,7 +134,7 @@ $member_id=is_login($link);
 									<li><a href="single-package.html">通识类</a></li>
 								</ul>
 							</li>
-							<li><a href="hotel-version-one.html">课程评论</a>
+							<li><a href="viedo.php">课程评论</a>
 								<ul class="dropdown">
 									<li><a href="hotel-version-one.html">计算机类</a></li>
 									<li><a href="hotel-version-two.html">文学类</a></li>
@@ -466,7 +466,7 @@ $member_id=is_login($link);
 					</div>
 					<div class="package-content">
 						<h3><a href="course2.php" title="">物联网应用及安全</a></h3>
-						<p>上传时间：07 02 课程ID：20182022194
+						<p>上传时间：07 02 课程ID：20182021300
 						</p>
 					</div>
 					<div class="package-calto-action">
@@ -703,10 +703,10 @@ $member_id=is_login($link);
 		</div>
 		<div class="row">
 			<!-- single travel blog-->
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s"style="width:220px;height:270px">
 				<div class="single-travel-blog">
 					<div class="blog-image">
-						<a href=""><img src="http://img.duoziwang.com/uploads/1512/1-1512261605250-L.jpg" alt="">
+						<a href=""><img src="http://img.duoziwang.com/uploads/1512/1-1512261605250-L.jpg" alt=""style="width: 100%;height:300px">
 						</a>
 					</div>
 					<div class="blog-content">
@@ -733,7 +733,7 @@ $member_id=is_login($link);
 			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s">
 				<div class="single-travel-blog">
 					<div class="blog-image">
-						<a href=""><img src="http://img.xinxic.com/img/152468016aea8295.jpg" alt="">
+						<a href=""><img src="http://img.xinxic.com/img/152468016aea8295.jpg" alt=""style="width: 100%;height:300px">
 						</a>
 					</div>
 					<div class="blog-content">
@@ -760,7 +760,7 @@ $member_id=is_login($link);
 			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s">
 				<div class="single-travel-blog">
 					<div class="blog-image">
-						<a href=""><img src="http://img.mp.itc.cn/upload/20161124/36eb1c2512b947a7ad6ee3a87c3fbee4_th.jpeg" alt="" >
+						<a href=""><img src="http://img.mp.itc.cn/upload/20161124/36eb1c2512b947a7ad6ee3a87c3fbee4_th.jpeg" alt="" style="width: 100%;height:300px">
 						</a>
 					</div>
 					<div class="blog-content">
