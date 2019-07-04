@@ -16,10 +16,11 @@ if(isset($_POST['submit'])){
 	if(mysqli_num_rows($result)==1){
 	    $S=mysqli_fetch_array($result);
 		setcookie('cookie[name]',$_POST['name'],time()+3600);
+	
 		setcookie('cookie[pw]',sha1(md5($_POST['pw'])) ,time()+3600);
 		setcookie('cookie[member_id]',$_POST['member_id'] ,time()+3600);
 		
-
+		
 		skip('/test/admin/father_module.php','ok','登录成功！');
         
     }
