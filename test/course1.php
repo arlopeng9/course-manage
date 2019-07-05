@@ -138,7 +138,7 @@ include_once 'index.inc/index1.inc.php';
 <div class="col-md-8 col-sm-12 col-xs-12">
 <!-- Single blog -->
 <div class="single-blog">
-<img src="https://edu-image.nosdn.127.net/288647B04DED46F53F2154ABF422099B.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" style="width: 550px;height:350px">
+<img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" style="width: 550px;height:350px">
 <div class="blog-content">
     <!-- Start blog -->
     <?php include_once 'index.inc/index2.inc.php';?>
@@ -287,7 +287,7 @@ C语言可以用于开发比较底层的东西，比如驱动、通信协议之�
                       </div>
                   </div><!-- ./ End  Blog Right Wrapper--><!-- ./ End  Blog Right Wrapper-->
            
-        </div></div>
+        </div>
     </section>
 
 
