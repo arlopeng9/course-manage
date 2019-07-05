@@ -14,6 +14,31 @@ $member_id=is_login($link);
 <?php include_once 'inc/head.inc.php';
 // var_dump($_COOKIE['cookie']);?>
 
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="js1/jsmodern.min.css">
+<script src="js1/jquery.min.js"></script>
+<script src="js1/jsmodern.min.js"></script>
+<script>
+	$(function () {
+		jsModern.video("#video");
+	})
+</script>
+
+
+</head>
+
+<body>
+     <label></label>
+     <br><label></label>
+
+	<div id="video" style="width:1000px;height:600px;margin:10px auto;">
+		<video src="js1/video.mp4"></video>
+	</div>
+
 
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
@@ -53,7 +78,7 @@ $member_id=is_login($link);
     <link rel="stylesheet" href="css2/assets/revolution/navigation.css">
     <link rel="stylesheet" href="css2/assets/revolution/settings.css">
     <!-- Preloader css -->
-    <link rel="stylesheet" href="css2/assets/preloader.css"> 
+    <link rel="stylesheet" href="css2/assets/preloader.css">
     <!-- custome css -->
     <link rel="stylesheet" href="css2/style.css">
     <!-- responsive css -->
@@ -61,7 +86,7 @@ $member_id=is_login($link);
     <link rel="stylesheet" href="css2/master.css">
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    
+
     <style type="text/css">
 body{background-color: #222}
 .videolist { position:relative; float:right; width:225px; height:170px; margin-right:50px; margin-bottom:30px; }
@@ -71,7 +96,7 @@ body{background-color: #222}
 .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
 </style>
     </head><body>
-   
+
    <header><div class="main_nav">
 		<div class="container">
 			<div class="row">
@@ -107,18 +132,18 @@ body{background-color: #222}
 				</div> <!-- main menu end here -->
 			</div>
 		</div>
-	</div> <!-- header-bottom area end here --></header> 
+	</div> <!-- header-bottom area end here --></header>
 	<section class="breadcrumb-blog-version-one">
         <div class="single-bredcurms">
-         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">    
-			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">    
+         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">
+			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">
 			 </div>
            <div class="container">
                <div class="row">
                     <div class="col-sm-12">
                         <div class="bredcrums-content">
                             <h2>代码全写队</h2>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -136,25 +161,25 @@ body{background-color: #222}
 <div class="video">
 	<div class="container" style="margin-top: 10px;">
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="210px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="210px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="200px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="200px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
@@ -163,39 +188,39 @@ body{background-color: #222}
 		</div>
 		<div class="container" style="margin-top: 30px">
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videos"></div>
 			</div>
-		
+
 </div>
 
 
 
-    
-    
-    
+
+
+
 
 
 
@@ -229,7 +254,7 @@ function close1(){
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="section-title text-center">
 					<h2>合作平台</h2>
-					 
+
 				</div>
 			</div>
 		</div>
@@ -269,8 +294,8 @@ function close1(){
 			</div>
 		</div>
 		<!-- partners images -->
-		
-		
+
+
 	</div>
 </section> <!--end partner section -->
 
@@ -309,7 +334,7 @@ function close1(){
 						<li><a href="" title="">课程评分</a></li>
 						<li><a href="person.php" title="">个人信息</a></li>
 						<li><a href="ourteam.php" title="">关于我们</a></li>
-						
+
 					</ul>
 				</div>
 			</div>	<!-- footer destination -->
@@ -329,8 +354,8 @@ function close1(){
 									<span class="post-content">
 										<label>课程名 :</label><br><label>身边的材料学 </label>
                                        <br><label>课程ID：20182018155</label>
-										
-										
+
+
 									</span>
 								</a>
 							</li>
@@ -342,7 +367,7 @@ function close1(){
 									<span class="post-content">
 										<label>课程名 :</label><br><label>信息安全概论 </label>
                                         <br><label>课程ID：20182047080</label>
-										
+
 									</span>
 								</a>
 							</li>
@@ -354,7 +379,7 @@ function close1(){
 									<span class="post-content">
 										<label>课程名 :</label><br><label>C语言程序设计 </label>
                                         <br><label>课程ID：20182047086</label>
-										
+
 									</span>
 								</a>
 							</li>
@@ -380,7 +405,7 @@ function close1(){
 									<button type="submit">Send</button>
 								</li>
 								<li>
-									
+
 								</li>
 							</ul>
 						</form>
@@ -426,14 +451,14 @@ function close1(){
 <div class="to-top pos-rtive">
 	<a href="#"><i class = "fa fa-angle-up"></i></a>
 </div><!-- Scroll to top-->
-    
+
     <!-- ============================
     		JavaScript Files
     ============================= -->
     <!-- jquery -->
     <script src="js/vendor/jquery-3.2.0.min.js"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <!-- owl.carousel js -->
     <script src="js/owl.carousel.min.js"></script>
@@ -475,7 +500,7 @@ function close1(){
     <!-- plugin js -->
     <script src="js/plugins.js"></script>
     <!-- select2 js -->
-    <script src="js/select2.min.js"></script>    
+    <script src="js/select2.min.js"></script>
     <script src="js/colors.js"></script>
     <!-- customSelect Js -->
     <script src="js/jquery-customselect.js"></script>
