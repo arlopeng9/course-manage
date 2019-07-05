@@ -3,6 +3,7 @@
 include_once 'inc/config.inc.php';
 include_once 'inc/mysql.inc.php';
 include_once 'inc/tool.inc.php';
+include_once 'inc/page.inc.php';
 
 $link=connect();
 $member_id=is_login($link);
@@ -10,6 +11,7 @@ $member_id=is_login($link);
 $template['css']=array('style/xuanze.css');
 foreach ($template['css'] as $val){
     echo "<link rel='stylesheet' type='text/css' href='{$val}' />";
+   
 }
 $php='xuanze';
 ?>
@@ -31,7 +33,10 @@ $php='xuanze';
     <link rel="stylesheet" href="../assets/css/layui.css">
     <link rel="stylesheet" href="../assets/css/view.css"/>
     <link rel="icon" href="/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" />
     <title>管理后台</title>
+    <script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/ui.js"></script>
     <script type="text/javascript" src="admin/pagination.js"></script>
     <script type="text/javascript">
         //全局变量
@@ -123,8 +128,12 @@ $php='xuanze';
 											<th><h4>院系</h4></th>
 											<th><h4>操作</h4></th>
 										</tr>
+										
 <?php if(isset($_POST['submit'])){
-		$query="select * from CM_course where course_name like '%{$_POST['search']}%'";
+             $query="select count(*) from CM_course where course_name like '%{$_POST['search']}%' ";
+             $count_all=num($link,$query);
+             $page=page($count_all,5);
+		$query="select * from CM_course where course_name like '%{$_POST['search']}%' {$page['limit']}";
 		$result=execute($link,$query);
 		while ($data=mysqli_fetch_assoc($result)){
 		    $query="select * from CM_course where cID='{$data['cID']}'";
@@ -139,7 +148,8 @@ $php='xuanze';
 			$return_url=urlencode($_SERVER['REQUEST_URI']);
 			$message="你真的要选择这门课嘛 {$data['course_name']} 吗？";
 			$add_url="confirm.php?url={$url}&return_url={$return_url}&message={$message}";
-			
+			$info_url="courseinfo.php?cID={$data['cID']}";
+				
 		
 			
 $html=<<<A
@@ -148,13 +158,17 @@ $html=<<<A
 				<td></br><h5>{$M['course_name']}[cID:{$M['cID']}]</h5></td>
 				                            <td></br><h5>{$T['teacher_name']}</h5></td>
 				                            <td></br><h5>{$M['course_college']}</h5></td>
-				<td></br><a href="javascript:course();"><h5>[查看详细]</h5></a><a href="$add_url"><h5>[选课]</h5></a></td>
+				<td></br><div class="alert open" style="color:#00F" onclick="mizhu.open(200, 450, '</br>课程详情', '$info_url');"><h5>[查看详细]</h5></div><a href="$add_url"><h5>[撤课]</h5></a></td>
+		                                    
 			</tr>
 				
 A;
 			echo $html;
 		}}else{
-		$query="select * from CM_course";
+		    $query="select count(*) from CM_course ";
+		    $count_all=num($link,$query);
+		    $page=page($count_all,5);
+		$query="select * from CM_course {$page['limit']}";
 		$result=execute($link,$query);
 		while ($data=mysqli_fetch_assoc($result)){
 		    $query="select * from CM_course where cID='{$data['cID']}'";
@@ -169,7 +183,8 @@ A;
 			$return_url=urlencode($_SERVER['REQUEST_URI']);
 			$message="你真的要选择这门课嘛 {$data['course_name']} 吗？";
 			$add_url="confirm.php?url={$url}&return_url={$return_url}&message={$message}";
-			
+			$info_url="courseinfo.php?cID={$data['cID']}";
+				
 		
 			
 $html=<<<A
@@ -178,13 +193,16 @@ $html=<<<A
 				<td></br><h5>{$M['course_name']}[cID:{$M['cID']}]</h5></td>
 				                            <td></br><h5>{$T['teacher_name']}</h5></td>
 				                            <td></br><h5>{$M['course_college']}</h5></td>
-				<td></br><a href="javascript:course();"><h5>[查看详细]</h5></a><a href="$add_url"><h5>[选课]</h5></a></td>
+				<td></br><div class="alert open" style="color:#00F" onclick="mizhu.open(200, 450, '</br>课程详情', '$info_url');"><h5>[查看详细]</h5></div><a href="$add_url"><h5>[撤课]</h5></a></td>
+		                                    
 			</tr>
 				
 A;
 			echo $html;
 		}}
+		
 		?>
+		
 	                        </table>
 	      <div id="pagiDiv" align="left" style="width:1200px">
         <span id="spanFirst">First</span>  
@@ -194,7 +212,10 @@ A;
         The <span id="spanPageNum"></span> Page/Total <span id="spanTotalPage"></span> Page
         </div>
         </div>
-	
+	<?php
+		
+		echo $page['html'];
+		?>
 	
 	                       </form>
                            </div>

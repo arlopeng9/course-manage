@@ -1086,39 +1086,39 @@ $member_id=is_login($link);
 						<ul class="recent-post">
 							<li>
 								<a href="course5.php">
-									<div class="post-thum">
+									<span class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/8282FBC079673EA3A28339617E2F69E5.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</div>
-									<div class="post-content">
-										<p>课程名 :</p><br><p>身边的材料学 </p>
-                                       <br><p>课程ID：20182018155</p>
+									</span>
+									<span class="post-content">
+										<label>课程名 :</label><br><label>身边的材料学 </label>
+                                       <br><label>课程ID：20182018155</label>
 										
 										
-									</div>
+									</span>
 								</a>
 							</li>
 							<li>
 								<a href="course3.php">
-									<div class="post-thum">
+									<span class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/821FF02EBD63421A183F6F4A41AAEEA0.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</div>
-									<div class="post-content">
-										<p>课程名 :</p><br><p>信息安全概论 </p>
-                                        <br><p>课程ID：20182047080</p>
+									</span>
+									<span class="post-content">
+										<label>课程名 :</label><br><label>信息安全概论 </label>
+                                        <br><label>课程ID：20182047080</label>
 										
-									</div>
+									</span>
 								</a>
 							</li>
 							<li>
 								<a href="course1.php">
-									<div class="post-thum">
+									<span class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</div>
-									<div class="post-content">
-										<p>课程名 :</p><br><p>C语言程序设计 </p>
-                                        <br><p>课程ID：20182047086</p>
+									</span>
+									<span class="post-content">
+										<label>课程名 :</label><br><label>C语言程序设计 </label>
+                                        <br><label>课程ID：20182047086</label>
 										
-									</div>
+									</span>
 								</a>
 							</li>
 						</ul>

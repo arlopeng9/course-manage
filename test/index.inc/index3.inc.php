@@ -18,7 +18,7 @@
                                     <input type="button" value="课程打分" name="submit2"><br>
                                   
                                    <?php }}else {?>
-                                    <button  class="king-btn-demo king-btn king-success"  name="submit3" style="margin-left: 450px;">评论</button>
+                                    <button  class="king-btn-demo king-btn king-success"  name="submit3" onclick="javascrtpt:window.location.href='login.php'" style="margin-left: 450px;">登陆选课后方可评论</button>
                                   <?php }?>
                                   </Form> 
                                   <div class="pages_wrap">

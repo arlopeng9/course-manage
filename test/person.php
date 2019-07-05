@@ -78,10 +78,7 @@ $php='person';
 										</a>
 									</dl>
 								</div>
-								<button class="btn ydc-ne-carousel" onclick="javascript:window.location.href='release.html';">
-									<i class="ydc-icon-shu"></i>
-									<span>学习心得</span>
-								</button>
+								
 							</div>
 							<div class="ydc-right-banner">
 								<div class="slideshow-container">
@@ -101,7 +98,7 @@ $php='person';
 								<div class="ydc-tabPanel">
 									<div>
 										<ul>
-											<li class="hit">公告栏</li>
+											<li >公告栏</li>
 										</ul>
 
 									</div>
