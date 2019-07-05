@@ -12,22 +12,27 @@
 			<div class="comment-list-wrapper">
 				
 					<div><!--星-->
-					<Form method="post">	
-					<label style="margin-left: 30px;font-size:25px;">课程分数：</label>
-						
-						<div class="myapp-score" style="margin-left: 30px;">
-						
-							<div id="comment">
-							</div>
-							<div class="myapp-tip">
-								<span id="score" class="lq-score-tip"></span>
+						<Form method="post">	
+						<label style="margin-left: 30px;font-size:25px;">课程分数：</label>
 							
-							<h1 style ="color:#ff8c58;font-size:45px;margin-left:15px"><?php echo $course['course_score']?>分</h1>
-							<input type="button" value="为课程和老师打分" onclick="mizhu.open(100, 400, '<br>打分', 'index.inc/grade.php');" name="submit2" style = "border:0;width:200;color:black;margin-left:265px;margin-top:-60px;background: #37ca21;border-radius:5px">
-							<div><label style="margin-left: -200px;color:#ff8c58;margin-top:-32px"><h3>(已有58人打分)</h3></label></div>
+							<div class="myapp-score" style="margin-left: 30px;">
+							
+								<div id="comment">
+								</div>
+								<div class="myapp-tip">
+									<span id="score" class="lq-score-tip"></span>
+								
+								<h1 style ="color:#ff8c58;font-size:45px;margin-left:15px"><?php echo $course['course_score']?>分</h1>
+								
+								
+								</div>
+								
 							</div>
-						</div>
+							<div><label style="margin-left: -260px;color:#ff8c58;margin-top:0px"><h3>(已有58人打分)</h3></label></div>
 					</div>
+					
+					
+						<input type="button" value="为课程和老师打分" onclick="mizhu.open(100, 400, '<br>打分', 'index.inc/grade.php');" name="submit2" style = "border:0;width:200;color:black;margin-left:500px;margin-top:-60px;background: #37ca21;border-radius:5px">
 					<br><br>					
 										
 					

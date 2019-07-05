@@ -63,11 +63,24 @@ include_once 'index.inc/index1.inc.php';
     <link rel="stylesheet" href="css2/master.css">
 	<link rel="stylesheet" href="css/lq-score.css">
 	<link rel="stylesheet" href="css/demo.css">
+	
+	 <link rel="stylesheet" href="css2/nav.css">
 	<!-- alert css-->
 	<link href="css/style.css" rel="stylesheet" />
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	
+	<!-- 视频 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+	body{background-color: #222}
+.videolist { position:relative; float:left; width:500px; height:300px; margin-right:50px; margin-top:15px; margin-bottom:30px; }
+.videolist:hover{ cursor: pointer; }
+.videoed { display:none; width:50px; height:50px; position: absolute; left:45%; top:45%; z-index:99; border-radius:100%; }
+.videos{ display:none; border: 1px solid #080808; position:fixed; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; }
+.vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
+</style>
+    
 </head>
 <div id="loader-wrapper">
     <div id="loader"></div>
@@ -119,9 +132,11 @@ include_once 'index.inc/index1.inc.php';
     </div> <!-- header-bottom area end here -->
 </header> <!-- header area end here -->
 
-    <!-- blog breadcrumb version one strat here -->
     <section class="breadcrumb-blog-version-one">
-        <div class="single-bredcurms" style="background-image:url('images/bercums/Blogs-Version-01.jpg');">
+        <div class="single-bredcurms">
+         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">    
+			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">    
+			 </div>
            <div class="container">
                <div class="row">
                     <div class="col-sm-12">
@@ -135,13 +150,49 @@ include_once 'index.inc/index1.inc.php';
         </div>
     </section><!-- blog breadcrumb version one end here -->
 <section id="blog" class="section-paddings single section page blog_wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-sm-12 col-xs-12">
-			<!-- Single blog -->
-				<div class="single-blog">
-					<div style="width:730px;height:1300px;background:white;position:relative;left:0px;top:10px;border-radius:10px">
-						<img src="https://edu-image.nosdn.127.net/288647B04DED46F53F2154ABF422099B.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" style="width: 600px;height:400px;margin-left:20px;margin-top:20px">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-12 col-xs-12">
+<!-- Single blog -->
+<div class="single-blog">
+
+<div class="video">
+	<div class="container" >
+		<div class="videolist" vpath="v1.jpg" ipath="ckin.mp4">
+			
+			<img src="img/v1.jpg" width="540px" height="300px" />
+			<div class="vtime">2018-06-22</div>
+			<img src="img/play.png" class="videoed">
+		</div>
+		
+		
+		<div class="videos"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js2/jquery.min.js"></script>
+<script type="text/javascript">
+$('.videolist').each(function(){ //遍历视频列表
+	$(this).hover(function(){ //鼠标移上来后显示播放按钮
+		$(this).find('.videoed').show();
+	},function(){
+		$(this).find('.videoed').hide();
+	});
+	$(this).click(function(){ //这个视频被点击后执行
+		var img = $(this).attr('vpath');//获取视频预览图
+		var video = $(this).attr('ipath');//获取视频路径
+		$('.videos').html("<video id=\"video\" poster='"+img+"' style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"img/gb.png\" width=\"25\" height=\"25\">");
+		$('.videos').show();
+	});
+});
+
+function close1(){
+	var v = document.getElementById('video');//获取视频节点
+	$('.videos').hide();//点击关闭按钮关闭暂停视频
+	v.pause();
+	$('.videos').html();
+}
+</script>
 						<div class="blog-content" style="margin-left:20px;margin-right:30px">
 						<!-- Start blog -->
 
@@ -165,7 +216,7 @@ include_once 'index.inc/index1.inc.php';
 						<br><label>第九章 宇宙探索</label>
 						<br><label>第十章 中国天文学和空间探测情况</label>
 
-						</div>
+						
 					</div>
 				</div><!--/ End Single blog -->
 
@@ -294,7 +345,7 @@ include_once 'index.inc/index1.inc.php';
 		</div><!-- ./ End  Blog Right Wrapper--><!-- ./ End  Blog Right Wrapper-->
 			   
 	</div>
-</section>
+
 
 
 <footer class="footer-area">
@@ -445,7 +496,26 @@ include_once 'index.inc/index1.inc.php';
 		</div>
 	</div>
 </footer> <!-- end footer -->
+<!-- fenxiang start -->
+<div class="suspension">
+	<div class="suspension-box">
+	<a href="javascript:share.weibo();" class="nav"><img src="images/weibo.jpg" width="44px" height="44px"></a>
+<a href="javascript:share.qzone();" class="nav"><img src="images/qzone.jpg" width="44px" height="44px"></a>
+<a  href="javascript:share.qq();" class="nav"><img src="images/qq.jpg" width="44px" height="44px" ></a>
+<a href="javascript:share.weixin();" class="nav"><img src="images/weixin.jpg"width="44px" height="44px" ></a>
 
+	</div>
+</div>
+<script src="js/share.js"></script>
+<script>	
+var share = new SimpleShare({
+url: window.location.href,
+title: '公共课程',
+content: '这门课真的不错',
+pics: ''
+});
+
+</script><!-- fenxiang end -->
 <div class="to-top pos-rtive">
     <a href="#"><i class = "fa fa-angle-up"></i></a>
 </div><!-- Scroll to top-->
