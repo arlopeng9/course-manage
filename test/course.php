@@ -16,6 +16,7 @@ $member_id=is_login($link);
 
 <!doctype html>
 <html>
+<<<<<<< HEAD
 <head>
 <meta charset="utf-8">
 <title></title>
@@ -506,5 +507,30 @@ function close1(){
     <script src="js/jquery-customselect.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+=======
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="js1/jsmodern.min.css">
+<script src="js1/jquery.min.js"></script>
+<script src="js1/jsmodern.min.js"></script>
+<script>
+	$(function () {
+		jsModern.video("#video");
+	})
+</script>
+
+
+</head>
+
+<body>
+     <label></label>
+     <br><label></label>
+     
+	<div id="video" style="width:1000px;height:600px;margin:10px auto;">
+		<video src="js1/video.mp4"></video>
+	</div>
+	
+>>>>>>> parent of 3549f2d... 123
 </body>
 </html>

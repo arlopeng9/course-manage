@@ -1,6 +1,7 @@
 
 
 <div class="commnet-wrapper">
+<<<<<<< HEAD
 	
     <div class="items_title">
 		<hr>
@@ -32,6 +33,33 @@
 										
 					
 					
+=======
+                            <div class="items_title">
+                                <h3 class="title">课程评论</h3>
+                            </div>
+                             <div class="comment-list-items">
+                                <div class="comment-list-wrapper">
+                                       <label style="margin-left: 30px;"><h1>分数：<?php echo $course['course_score']?></h1></label>
+                              <?php if(@$_COOKIE['cookie']['name']!=NULL){
+                                 $query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";
+                                   $result=execute($link,$query);
+                                   
+                                    if($data=mysqli_fetch_assoc($result)){
+                                ?>
+                                <Form method="post">
+                             <span>  <br><input type="text" name="content"></span>
+                                  
+                                <br><input type="submit" value="提交评论"name="submit">
+                                    <input type="button" value="课程打分" name="submit2"><br>
+                                  
+                                   <?php }}else {?>
+                                    <button  class="king-btn-demo king-btn king-success"  name="submit3" style="margin-left: 450px;">评论</button>
+                                  <?php }?>
+                                  </Form> 
+                                  <div class="pages_wrap">
+				 
+				<div class="pages">
+>>>>>>> parent of 3549f2d... 123
 					<?php 
 						if(@$_COOKIE['cookie']['name']!=NULL){
 							$query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";

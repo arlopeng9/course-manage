@@ -115,7 +115,7 @@ include_once 'inc/head.inc.php';?>
 									return false;
 								}
 								$.ajax({
-								url:"inc/bug/check_register.inc.php",  //验证表单的页面
+								url:"inc/check_register.inc.php",  //验证表单的页面
 								data:{"name":name,"pw":pw,"confirm_pw":confirm_pw,"member_mail":member_mail,"code":code},//传入后台
 								type:"POST",//类型
 								dataType:"json",

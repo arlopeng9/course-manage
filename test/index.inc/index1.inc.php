@@ -35,9 +35,7 @@ if(@$_COOKIE['cookie']['name']!=NULL){
         }
         $query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}'";
         $result=execute($link,$query);
-        if(mysqli_fetch_assoc($result)){
-            $query="delete from CM_student_course where student_number='{$student_course['student_number']}'and cID='{$course['cID']}'";
-            execute($link,$query);}else{
+        if(mysqli_fetch_assoc($result)){;}else{
             $query="insert into CM_student_course (student_number,cID) values('{$student_course['student_number']}','{$course['cID']}')";
             execute($link,$query);
         }
