@@ -72,6 +72,7 @@ $query="select * from CM_course where course_id='{$course_id}'";
     <link rel="stylesheet" href="css2/master.css">
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<<<<<<< HEAD
  <!-- 视频 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -84,6 +85,8 @@ body{background-color: #222}
 .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
 </style>
     
+=======
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 </head>
 <div id="loader-wrapper">
     <div id="loader"></div>
@@ -137,10 +140,7 @@ body{background-color: #222}
 
     <!-- blog breadcrumb version one strat here -->
     <section class="breadcrumb-blog-version-one">
-        <div class="single-bredcurms">
-         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">    
-			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">    
-			 </div>
+        <div class="single-bredcurms" style="background-image:url('images/bercums/Blogs-Version-01.jpg');">
            <div class="container">
                <div class="row">
                     <div class="col-sm-12">
@@ -153,6 +153,7 @@ body{background-color: #222}
             </div>
         </div>
     </section><!-- blog breadcrumb version one end here -->
+<<<<<<< HEAD
 <section id="blog" class="section-paddings single section page blog_wrapper">
 <div class="container">
 <div class="row">
@@ -189,14 +190,17 @@ $('.videolist').each(function(){ //遍历视频列表
 		$('.videos').show();
 	});
 });
+=======
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 
-function close1(){
-	var v = document.getElementById('video');//获取视频节点
-	$('.videos').hide();//点击关闭按钮关闭暂停视频
-	v.pause();
-	$('.videos').html();
-}
-</script>
+    <!-- Start blog -->
+    <section id="blog" class="section-paddings single section page blog_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                        <!-- Single blog -->
+                        <div class="single-blog">
+                            <img src="https://edu-image.nosdn.127.net/6CE1F9C631F5BA4EF0FADE575E526585.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" style="width: 550px;height:350px">
                             <div class="blog-content">
                                <?php include_once 'index.inc/index2.inc.php';?>
                                
@@ -379,7 +383,8 @@ function close1(){
 					</ul>
 				</div>
 			</div>	<!-- footer destination -->
-<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 				<div class="single-footer">
 					<div class="single-recent-post">
 						<div class="footer-title">
@@ -388,45 +393,53 @@ function close1(){
 						<ul class="recent-post">
 							<li>
 								<a href="course5.php">
-									<span class="post-thum">
+									<div class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/8282FBC079673EA3A28339617E2F69E5.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</span>
-									<span class="post-content">
-										<label>课程名 :</label><br><label>身边的材料学 </label>
-                                       <br><label>课程ID：20182018155</label>
+									</div>
+									<div class="post-content">
+										<p>课程名 :</p><br><p>身边的材料学 </p>
+                                       <br><p>课程ID：20182018155</p>
 										
 										
-									</span>
+									</div>
 								</a>
 							</li>
 							<li>
 								<a href="course3.php">
-									<span class="post-thum">
+									<div class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/821FF02EBD63421A183F6F4A41AAEEA0.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
+<<<<<<< HEAD
 									</span>
 									<span class="post-content">
 										<label>课程名 :</label><br><label>信息安全概论 </label>
                                         <br><label>课程ID：20182047080</label>
+=======
+									</div>
+									<div class="post-content">
+										<p>课程名 :</p><br><p>信息安全概论 </p>
+                                        <br><p>课程ID：20182047080</p>
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 										
-									</span>
+									</div>
 								</a>
 							</li>
 							<li>
 								<a href="course1.php">
-									<span class="post-thum">
+									<div class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</span>
-									<span class="post-content">
-										<label>课程名 :</label><br><label>C语言程序设计 </label>
-                                        <br><label>课程ID：20182047086</label>
+									</div>
+									<div class="post-content">
+										<p>课程名 :</p><br><p>C语言程序设计 </p>
+                                        <br><p>课程ID：20182047086</p>
 										
-									</span>
+									</div>
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>	<!-- footer latest news -->
+
 			<!-- footer contact -->
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3 f-phone-responsive">
 				<div class="single-footer">

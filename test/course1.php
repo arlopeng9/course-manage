@@ -63,6 +63,7 @@ include_once 'index.inc/index1.inc.php';
     <link rel="stylesheet" href="css2/master.css">
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<<<<<<< HEAD
     <!-- 视频 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,6 +76,8 @@ body{background-color: #222}
 .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
 </style>
     
+=======
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 </head>
 <div id="loader-wrapper">
     <div id="loader"></div>
@@ -150,6 +153,7 @@ body{background-color: #222}
 <div class="col-md-8 col-sm-12 col-xs-12">
 <!-- Single blog -->
 <div class="single-blog">
+<<<<<<< HEAD
 
 <div class="video">
 	<div class="container" >
@@ -190,6 +194,9 @@ function close1(){
 </script>
 
 
+=======
+<img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" style="width: 550px;height:350px">
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 <div class="blog-content">
     <!-- Start blog -->
     <?php include_once 'index.inc/index2.inc.php';?>
@@ -391,39 +398,46 @@ C语言可以用于开发比较底层的东西，比如驱动、通信协议之�
 						<ul class="recent-post">
 							<li>
 								<a href="course5.php">
-									<span class="post-thum">
+									<div class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/8282FBC079673EA3A28339617E2F69E5.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</span>
-									<span class="post-content">
-										<label>课程名 :</label><br><label>身边的材料学 </label>
-                                       <br><label>课程ID：20182018155</label>
+									</div>
+									<div class="post-content">
+										<p>课程名 :</p><br><p>身边的材料学 </p>
+                                       <br><p>课程ID：20182018155</p>
 										
 										
-									</span>
+									</div>
 								</a>
 							</li>
 							<li>
 								<a href="course3.php">
-									<span class="post-thum">
+									<div class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/821FF02EBD63421A183F6F4A41AAEEA0.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
+<<<<<<< HEAD
 									</span>
 									<span class="post-content">
 										<label>课程名 :</label><br><label>信息安全概论 </label>
                                         <br><label>课程ID：20182047080</label>
+=======
+									</div>
+									<div class="post-content">
+										<p>课程名 :</p><br><p>信息安全概论 </p>
+                                        <br><p>课程ID：20182047080</p>
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 										
-									</span>
+									</div>
 								</a>
 							</li>
 							<li>
 								<a href="course1.php">
-									<span class="post-thum">
+									<div class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</span>
-									<span class="post-content">
-										<label>课程名 :</label><br><label>C语言程序设计 </label>
-                                        <br><label>课程ID：20182047086</label>
+									</div>
+									<div class="post-content">
+										<p>课程名 :</p><br><p>C语言程序设计 </p>
+                                        <br><p>课程ID：20182047086</p>
 										
-									</span>
+									</div>
 								</a>
 							</li>
 						</ul>

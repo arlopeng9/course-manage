@@ -14,6 +14,32 @@ $member_id=is_login($link);
 <?php include_once 'inc/head.inc.php';
 // var_dump($_COOKIE['cookie']);?>
 
+<!doctype html>
+<html>
+<<<<<<< HEAD
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="js1/jsmodern.min.css">
+<script src="js1/jquery.min.js"></script>
+<script src="js1/jsmodern.min.js"></script>
+<script>
+	$(function () {
+		jsModern.video("#video");
+	})
+</script>
+
+
+</head>
+
+<body>
+     <label></label>
+     <br><label></label>
+
+	<div id="video" style="width:1000px;height:600px;margin:10px auto;">
+		<video src="js1/video.mp4"></video>
+	</div>
+
 
 
 
@@ -113,7 +139,11 @@ body{background-color: #222}
 	<section class="breadcrumb-blog-version-one">
         <div class="single-bredcurms">
          <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">
+<<<<<<< HEAD
 			 <img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/bg_4.jpg"  style=" width:100%;height:450px;">
+=======
+			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 			 </div>
            <div class="container">
                <div class="row">
@@ -483,5 +513,30 @@ function close1(){
     <script src="js/jquery-customselect.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+=======
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="js1/jsmodern.min.css">
+<script src="js1/jquery.min.js"></script>
+<script src="js1/jsmodern.min.js"></script>
+<script>
+	$(function () {
+		jsModern.video("#video");
+	})
+</script>
+
+
+</head>
+
+<body>
+     <label></label>
+     <br><label></label>
+     
+	<div id="video" style="width:1000px;height:600px;margin:10px auto;">
+		<video src="js1/video.mp4"></video>
+	</div>
+	
+>>>>>>> parent of 3549f2d... 123
 </body>
 </html>

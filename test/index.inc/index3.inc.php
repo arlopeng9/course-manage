@@ -1,6 +1,10 @@
 
 
 <div class="commnet-wrapper">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 	
     <div class="items_title">
 		<hr>
@@ -12,6 +16,7 @@
 			<div class="comment-list-wrapper">
 				
 					<div><!--星-->
+<<<<<<< HEAD
 						<Form method="post">	
 						<label style="margin-left: 30px;font-size:25px;">课程分数：</label>
 							
@@ -33,10 +38,58 @@
 					
 					
 						<input type="button" value="为课程和老师打分" onclick="mizhu.open(100, 400, '<br>打分', 'index.inc/grade.php');" name="submit2" style = "border:0;width:200;color:black;margin-left:500px;margin-top:-60px;background: #37ca21;border-radius:5px">
+=======
+					<Form method="post">	
+					<label style="margin-left: 30px;font-size:25px;">课程分数：</label>
+						
+						<div class="myapp-score" style="margin-left: 30px;">
+						
+							<div id="comment">
+							</div>
+							<div class="myapp-tip">
+								<span id="score" class="lq-score-tip"></span>
+							
+							<h1 style ="color:#ff8c58;font-size:45px;margin-left:15px"><?php echo $course['course_score']?>分</h1>
+							<input type="button" value="为课程和老师打分" onclick="mizhu.open(100, 400, '<br>打分', 'index.inc/grade.php');" name="submit2" style = "border:0;width:200;color:black;margin-left:265px;margin-top:-60px;background: #37ca21;border-radius:5px">
+							<div><label style="margin-left: -200px;color:#ff8c58;margin-top:-32px"><h3>(已有58人打分)</h3></label></div>
+							</div>
+						</div>
+					</div>
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 					<br><br>					
 										
 					
 					
+<<<<<<< HEAD
+=======
+=======
+                            <div class="items_title">
+                                <h3 class="title">课程评论</h3>
+                            </div>
+                             <div class="comment-list-items">
+                                <div class="comment-list-wrapper">
+                                       <label style="margin-left: 30px;"><h1>分数：<?php echo $course['course_score']?></h1></label>
+                              <?php if(@$_COOKIE['cookie']['name']!=NULL){
+                                 $query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";
+                                   $result=execute($link,$query);
+                                   
+                                    if($data=mysqli_fetch_assoc($result)){
+                                ?>
+                                <Form method="post">
+                             <span>  <br><input type="text" name="content"></span>
+                                  
+                                <br><input type="submit" value="提交评论"name="submit">
+                                    <input type="button" value="课程打分" name="submit2"><br>
+                                  
+                                   <?php }}else {?>
+                                    <button  class="king-btn-demo king-btn king-success"  name="submit3" style="margin-left: 450px;">评论</button>
+                                  <?php }?>
+                                  </Form> 
+                                  <div class="pages_wrap">
+				 
+				<div class="pages">
+>>>>>>> parent of 3549f2d... 123
+>>>>>>> b10250c3062c64d4d1977281bd56ed4ca1b348ce
 					<?php 
 						if(@$_COOKIE['cookie']['name']!=NULL){
 							$query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";

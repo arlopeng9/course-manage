@@ -24,7 +24,7 @@
 
 
 </head>
-<body bgcolor = "">
+<body bgcolor = "#eeeeee">
 <section>
 		<div class="ydc-content-slide ydc-body">
 			<div class="ydc-flex">
