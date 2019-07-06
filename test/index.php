@@ -128,18 +128,10 @@ $member_id=is_login($link);
 							<li class="active"><a href="index.php">首页</a>
 							</li>
 							<li><a href="course.php">课程资源</a>
-								<ul class="dropdown">
-									<li><a href="package-version-one.html">计算机类</a></li>
-									<li><a href="package-version-two.html">文学类 </a></li>
-									<li><a href="single-package.html">通识类</a></li>
-								</ul>
+								
 							</li>
-							<li><a href="viedo.php">课程评论</a>
-								<ul class="dropdown">
-									<li><a href="hotel-version-one.html">计算机类</a></li>
-									<li><a href="hotel-version-two.html">文学类</a></li>
-									<li><a href="hotel-details.html">通识类</a></li>
-								</ul>
+							<li><a href="viedo1.php">课程评论</a>
+								
 							</li>
 							<li><a href="person.php">个人信息</a></li>
 							<li><a href="ourteam.php">关于我们</a></li>
@@ -159,7 +151,7 @@ $member_id=is_login($link);
 
 				<li data-index="rs-3049" data-transition="zoomin" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/slider/slider_1_1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Love it?" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 					<!-- MAIN IMAGE -->
-					<img src="http://pcs4.clubstatic.lenovo.com.cn/data/attachment/forum/201612/16/091850f3j76a6t7y36at88.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+					<img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/bg_9.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 					<!-- BEGIN BASIC TEXT LAYER -->
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-1" 
@@ -238,7 +230,7 @@ $member_id=is_login($link);
 
 				<li data-index="rs-3007" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/slider/slider_1_2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Iceberg" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 					<!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-					<img src="http://attach.bbs.miui.com/forum/201311/17/125654en6sw0w30vfnd7f0.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+					<img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/bg_1.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 					<!-- BEGIN BASIC TEXT LAYER -->
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-1" 
@@ -315,7 +307,7 @@ $member_id=is_login($link);
 				<!-- second slider end -->
 				<li data-index="rs-3027" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/slider/slider_1_2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Iceberg" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 					<!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-					<img src="http://img3.a0bi.com/upload/ttq/20140927/1411797423325.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+					<img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/bg_14.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 					<!-- BEGIN BASIC TEXT LAYER -->
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-1" 
@@ -406,10 +398,7 @@ $member_id=is_login($link);
 							<input type="search" name="s" id="keyword2" class="hotel-input-first" placeholder="课程名称">
 						</div>
 						
-						<div class="form-group keywork_type">
-							<label><i class="fa fa-map-marker"></i></label>
-							<input type="search" name="s" id="keyword2" class="hotel-input-first" placeholder="老师名称">
-						</div>
+						
 						<div class="form-group searc-btn-7">
 							<button type="submit">搜索</button>
 						</div>
@@ -433,165 +422,16 @@ $member_id=is_login($link);
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="course1.php"><img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt=""></a>
-					</div>
-					<div class="package-content">
-						<h3><a href="course1.php" title="">C语言程序设计</a></h3>
-						<p>上传时间：07 02 课程ID：20182047086
-						</p>
-					</div>
-					<div class="package-calto-action">
-						<ul class="ct-action">
-							<li><a href="course1.php" class="travel-booking-btn hvr-shutter-out-horizontal">进入课程</a></li>
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> <!-- single package end -->
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="course2.php"><img src="https://edu-image.nosdn.127.net/76F0C19078017F0FA44FFBA7A6B83E9B.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt=""></a>
-					</div>
-					<div class="package-content">
-						<h3><a href="course2.php" title="">物联网应用及安全</a></h3>
-						<p>上传时间：07 02 课程ID：20182021300
-						</p>
-					</div>
-					<div class="package-calto-action">
-						<ul class="ct-action">
-							<li><a href="course2.php" class="travel-booking-btn hvr-shutter-out-horizontal">进入课程</a></li>
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> <!-- second package end -->
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="course3.php"><img src="https://edu-image.nosdn.127.net/821FF02EBD63421A183F6F4A41AAEEA0.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt=""></a>
-					</div>
-					<div class="package-content">
-						<h3><a href="course3.php" title="">信息安全概论</a></h3>
-						<p>上传时间：07 02 课程ID：20182047080
-						</p>
-					</div>
-					<div class="package-calto-action">
-						<ul class="ct-action">
-							<li><a href="course3.php" class="travel-booking-btn hvr-shutter-out-horizontal">进入课程</a></li>
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> <!--third package end -->
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="course4.php"><img src="https://img-ph-mirror.nosdn.127.net/Pi-k3AX09Y8XVBePjsJJEQ==/6597828429681640478.jpg?imageView&thumbnail=223x125&quality=100" alt=""></a>
-					</div>
-					<div class="package-content">
-						<h3><a href="course4.php" title="">计算机思维导论</a></h3>
-						<p>上传时间：07 02 课程ID：20182021301
-						</p>
-					</div>
-					<div class="package-calto-action">
-						<ul class="ct-action">
-							<li><a href="course4.php" class="travel-booking-btn hvr-shutter-out-horizontal">进入课程</a></li>
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> <!-- fourth package end -->
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="course5.php"><img src="https://edu-image.nosdn.127.net/8282FBC079673EA3A28339617E2F69E5.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt=""></a>
-					</div>
-					<div class="package-content">
-						<h3><a href="course5.php" title="">身边的材料学</a></h3>
-						<p>上传时间：07 02 课程ID：20182018155
-						</p>
-					</div>
-					<div class="package-calto-action">
-						<ul class="ct-action">
-							<li><a href="course5.php" class="travel-booking-btn hvr-shutter-out-horizontal">进入课程</a></li>
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> <!-- fifth package end -->
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="course6.php"><img src="https://edu-image.nosdn.127.net/C2E910CE23079A4D477A111FF2980735.png?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt=""></a>
-					</div>
-					<div class="package-content">
-						<h3><a href="course6.php" title="">遥感技术应用及发展</a></h3>
-						<p>上传时间：07 02 课程ID：20182023104
-						</p>
-					</div>
-					<div class="package-calto-action">
-						<ul class="ct-action">
-							<li><a href="course6.php" class="travel-booking-btn hvr-shutter-out-horizontal">进入课程</a></li>
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> <!-- sixth package end -->
+		<?php include_once 'index.inc/index_recommend.php';?>
 		</div>
-	</div>
+
 </section> <!--end  popular packajge -->
 
 <section class="countdown count-down-bg">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12-col-xs-12">
-				<div class="count-down-titile">
+				<div class="count-down-titile" style="margin-top: 20px">
 					<h2> 课程门类<span class="color-one">多样课程选择</span> For Free <br> 课程资源 <span class="color-two">详细信息预览</span> </h2>
 				</div>
 				<div class="count-timer text-center">
@@ -706,7 +546,7 @@ $member_id=is_login($link);
 			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s"style="width:220px;height:270px">
 				<div class="single-travel-blog">
 					<div class="blog-image">
-						<a href=""><img src="http://img.duoziwang.com/uploads/1512/1-1512261605250-L.jpg" alt=""style="width: 100%;height:300px">
+						<a href=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F14.jpg" alt=""style="width: 100%;height:300px">
 						</a>
 					</div>
 					<div class="blog-content">
@@ -733,7 +573,7 @@ $member_id=is_login($link);
 			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s">
 				<div class="single-travel-blog">
 					<div class="blog-image">
-						<a href=""><img src="http://img.xinxic.com/img/152468016aea8295.jpg" alt=""style="width: 100%;height:300px">
+						<a href=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F7.jpg" alt=""style="width: 100%;height:300px">
 						</a>
 					</div>
 					<div class="blog-content">
@@ -760,7 +600,7 @@ $member_id=is_login($link);
 			<div class="col-12 col-sm-6 col-md-6 col-lg-4 phone-layout-s">
 				<div class="single-travel-blog">
 					<div class="blog-image">
-						<a href=""><img src="http://img.mp.itc.cn/upload/20161124/36eb1c2512b947a7ad6ee3a87c3fbee4_th.jpeg" alt="" style="width: 100%;height:300px">
+						<a href=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F11.jpg" alt="" style="width: 100%;height:300px">
 						</a>
 					</div>
 					<div class="blog-content">
@@ -808,10 +648,10 @@ $member_id=is_login($link);
                     <!-- start top media -->
                     <div class="top-testimonial-image slick-pagination">
                         <div class="carousel-images slider-nav-two">
-                            <div class="images_single"><img src="http://img.mp.itc.cn/upload/20161202/e3e04c73dacd4698af01ac2aa1d3ae7f_th.png" alt="1" class="img-responsive img-circle"></div>
-                            <div class="images_single"><img src="http://img1.imgtn.bdimg.com/it/u=4119762299,3413011776&fm=11&gp=0.jpg" alt="3" class="img-responsive img-circle"></div>
-                            <div class="images_single"><img src="http://img3.imgtn.bdimg.com/it/u=2457169335,3956820268&fm=11&gp=0.jpg" alt="2" class="img-responsive img-circle"></div>
-                            <div class="images_single"><img src="http://img1.imgtn.bdimg.com/it/u=570834769,2208332874&fm=11&gp=0.jpg" alt="3" class="img-responsive img-circle"></div>
+                            <div class="images_single"><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F11.jpg" alt="1" class="img-responsive img-circle"></div>
+                            <div class="images_single"><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F12.jpg" alt="3" class="img-responsive img-circle"></div>
+                            <div class="images_single"><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F10.jpg" alt="2" class="img-responsive img-circle"></div>
+                            <div class="images_single"><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F13.jpg" alt="3" class="img-responsive img-circle"></div>
                         </div>
                     </div><!-- end top media images -->
 
@@ -1153,11 +993,11 @@ $member_id=is_login($link);
 							<h3>Follow Us</h3>
 						</div>
 						<ul class="footer-social-link">
-							<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+							<li class="facebook"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+							<li class="gplus"><a href="https://www.cnbeta.com"><i class="fa fa-google-plus"></i></a></li>
+							<li class="youtube"><a href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
 						</ul>
 					</div>
 				</div>

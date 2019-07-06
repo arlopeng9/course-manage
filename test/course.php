@@ -15,6 +15,8 @@ $member_id=is_login($link);
 // var_dump($_COOKIE['cookie']);?>
 
 
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 <head>
@@ -53,7 +55,7 @@ $member_id=is_login($link);
     <link rel="stylesheet" href="css2/assets/revolution/navigation.css">
     <link rel="stylesheet" href="css2/assets/revolution/settings.css">
     <!-- Preloader css -->
-    <link rel="stylesheet" href="css2/assets/preloader.css"> 
+    <link rel="stylesheet" href="css2/assets/preloader.css">
     <!-- custome css -->
     <link rel="stylesheet" href="css2/style.css">
     <!-- responsive css -->
@@ -61,7 +63,7 @@ $member_id=is_login($link);
     <link rel="stylesheet" href="css2/master.css">
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    
+
     <style type="text/css">
 body{background-color: #222}
 .videolist { position:relative; float:right; width:225px; height:170px; margin-right:50px; margin-bottom:30px; }
@@ -71,7 +73,7 @@ body{background-color: #222}
 .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
 </style>
     </head><body>
-   
+
    <header><div class="main_nav">
 		<div class="container">
 			<div class="row">
@@ -107,18 +109,18 @@ body{background-color: #222}
 				</div> <!-- main menu end here -->
 			</div>
 		</div>
-	</div> <!-- header-bottom area end here --></header> 
+	</div> <!-- header-bottom area end here --></header>
 	<section class="breadcrumb-blog-version-one">
         <div class="single-bredcurms">
-         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">    
-			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">    
+         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">
+			 <img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/bg_4.jpg"  style=" width:100%;height:450px;">
 			 </div>
            <div class="container">
                <div class="row">
                     <div class="col-sm-12">
                         <div class="bredcrums-content">
                             <h2>代码全写队</h2>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -136,25 +138,25 @@ body{background-color: #222}
 <div class="video">
 	<div class="container" style="margin-top: 10px;">
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="210px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="210px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="200px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
 		<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-			
+
 			<img src="img/v1.jpg" width="220px" height="200px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
@@ -163,39 +165,39 @@ body{background-color: #222}
 		</div>
 		<div class="container" style="margin-top: 30px">
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videolist" vpath="v1.jpg" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
-				
+
 				<img src="img/v1.jpg" width="220px" height="200px" />
 				<div class="vtime">2018-06-22</div>
 				<img src="img/play.png" class="videoed">
 			</div>
 			<div class="videos"></div>
 			</div>
-		
+
 </div>
 
 
 
-    
-    
-    
+
+
+
 
 
 
@@ -229,7 +231,7 @@ function close1(){
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="section-title text-center">
 					<h2>合作平台</h2>
-					 
+
 				</div>
 			</div>
 		</div>
@@ -269,8 +271,8 @@ function close1(){
 			</div>
 		</div>
 		<!-- partners images -->
-		
-		
+
+
 	</div>
 </section> <!--end partner section -->
 
@@ -309,7 +311,7 @@ function close1(){
 						<li><a href="" title="">课程评分</a></li>
 						<li><a href="person.php" title="">个人信息</a></li>
 						<li><a href="ourteam.php" title="">关于我们</a></li>
-						
+
 					</ul>
 				</div>
 			</div>	<!-- footer destination -->
@@ -329,8 +331,8 @@ function close1(){
 									<span class="post-content">
 										<label>课程名 :</label><br><label>身边的材料学 </label>
                                        <br><label>课程ID：20182018155</label>
-										
-										
+
+
 									</span>
 								</a>
 							</li>
@@ -342,7 +344,7 @@ function close1(){
 									<span class="post-content">
 										<label>课程名 :</label><br><label>信息安全概论 </label>
                                         <br><label>课程ID：20182047080</label>
-										
+
 									</span>
 								</a>
 							</li>
@@ -354,7 +356,7 @@ function close1(){
 									<span class="post-content">
 										<label>课程名 :</label><br><label>C语言程序设计 </label>
                                         <br><label>课程ID：20182047086</label>
-										
+
 									</span>
 								</a>
 							</li>
@@ -380,7 +382,7 @@ function close1(){
 									<button type="submit">Send</button>
 								</li>
 								<li>
-									
+
 								</li>
 							</ul>
 						</form>
@@ -390,11 +392,11 @@ function close1(){
 							<h3>Follow Us</h3>
 						</div>
 						<ul class="footer-social-link">
-							<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+							<li class="facebook"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+							<li class="gplus"><a href="https://www.cnbeta.com"><i class="fa fa-google-plus"></i></a></li>
+							<li class="youtube"><a href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -426,14 +428,14 @@ function close1(){
 <div class="to-top pos-rtive">
 	<a href="#"><i class = "fa fa-angle-up"></i></a>
 </div><!-- Scroll to top-->
-    
+
     <!-- ============================
     		JavaScript Files
     ============================= -->
     <!-- jquery -->
     <script src="js/vendor/jquery-3.2.0.min.js"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <!-- owl.carousel js -->
     <script src="js/owl.carousel.min.js"></script>
@@ -475,7 +477,7 @@ function close1(){
     <!-- plugin js -->
     <script src="js/plugins.js"></script>
     <!-- select2 js -->
-    <script src="js/select2.min.js"></script>    
+    <script src="js/select2.min.js"></script>
     <script src="js/colors.js"></script>
     <!-- customSelect Js -->
     <script src="js/jquery-customselect.js"></script>

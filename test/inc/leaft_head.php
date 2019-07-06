@@ -62,14 +62,10 @@
 								</span>
 								<ul>
 									<li>
-										<a href="#">学习时间统计</a>
+										<a href="lishi.php">学习历史</a>
 									</li>
-									<li>
-										<a href="#">内容</a>
-									</li>
-									<li>
-										<a href="#">指数星级</a>
-									</li>
+									
+									
 								</ul>
 							</li>
 							<li class="ydc-menu-item">
@@ -78,7 +74,7 @@
 								</span>
 								<ul>
 									<li>
-										<a href="#">账号信息</a>
+										<a href="xinxi.php">账号信息</a>
 									</li>
 									<li>
 										<a href="xueji.php" title="学籍绑定"<?php if($php=='xueji'){echo 'class="active"';}?>> <i class=" fa fa-fw fa-gear"></i>

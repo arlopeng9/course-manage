@@ -29,6 +29,7 @@
 					C语言程序设计</a>
 					<h4>课程ID：20182047086 <span>{$S['course_student_count']}</span></h4>
 				</div> 
+					    
 </div> <!-- single popular destination  end-->
 A;
 		IF($A[1]=='20182047086'or$B[1]=='20182047086'or$C[1]=='20182047086'or$D[1]=='20182047086'or$E[1]=='20182047086'){		echo $html;}
@@ -191,7 +192,7 @@ A;
 IF($A[1]=='20182021299'or$B[1]=='20182021299'or$C[1]=='20182021299'or$D[1]=='20182021299'or$E[1]=='20182021299'){		echo $html;}
 ?>		
 <?php
-$course='20182023104';
+$course='20182022190';
 $query="select course_id,course_student_count,course_score from CM_course where course_id='{$course}'";
 $result=execute($link,$query);
 $S=mysqli_fetch_assoc($result);

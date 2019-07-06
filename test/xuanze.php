@@ -107,13 +107,22 @@ $php='xuanze';
 										<form method="post">
 										<div class="fl ydc-group-input">
 										
-										    <input type="text" name="search" placeholder="请输入关键词进行课程查询搜索">											
-											 
+										    <input type="text" name="search" placeholder="请输入关键词进行课程查询搜索"  onkeyup="showResult(this.value)">											
+											
 											<button name="submit" type="submit" class="ydc-group-button">搜 索</button>
+											
 										</div>
+											<div class="col-md-10">
+									<nav>
+										<ul class="dropdown">
+									 <div id="livesearch"></div>
+									</ul>
+									</nav>
+									</div>
 										</form>
 									</div>
-									<div class="ydc-group-altogether">共<span>1</span>门课程</div>
+								
+									
 									<div class="ydc-group-table">
 									
 									<div id="main" style = "margin-left:0px;font-size:15px">
@@ -299,6 +308,36 @@ A;
 	            $('.ydc-panes>div:eq('+$(this).index()+')').show().siblings().hide();
 	        })
 	    })
+	  
+	    function showResult(str)
+	    {
+	        if (str.length==0)
+	        { 
+	            document.getElementById("livesearch").innerHTML="";
+	            document.getElementById("livesearch").style.border="0px";
+	            return;
+	        }
+	        if (window.XMLHttpRequest)
+	        {// IE7+, Firefox, Chrome, Opera, Safari 浏览器执行
+	            xmlhttp=new XMLHttpRequest();
+	        }
+	        else
+	        {// IE6, IE5 浏览器执行
+	            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	        }
+	        xmlhttp.onreadystatechange=function()
+	        {
+	            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	            {
+	                document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+	                document.getElementById("livesearch").style.border="20px soild #dddddd";
+	                document.getElementById("livesearch").style.borderTopWidth="10px";
+	            }
+	        }
+	        xmlhttp.open("GET","livesearch.php?q="+str,true);
+	        xmlhttp.send();
+	    }
+	  
 	</script>
 
 </body>
