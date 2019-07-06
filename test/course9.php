@@ -8,7 +8,7 @@ $member_id=is_login($link);
 $template['css']=array('style/public.css');
 foreach ($template['css'] as $val){
     echo "<link rel='stylesheet' type='text/css' href='{$val}' />";
-}$course_id='20182023104';
+}$course_id='20182022190';
 $adress='course9.php ';
 
 include_once 'index.inc/index1.inc.php';
@@ -63,7 +63,7 @@ include_once 'index.inc/index1.inc.php';
     <link rel="stylesheet" href="css2/master.css">
 	<link rel="stylesheet" href="css/lq-score.css">
 	<link rel="stylesheet" href="css/demo.css">
-	
+
 	 <link rel="stylesheet" href="css2/nav.css">
 	<!-- alert css-->
 	<link href="css/style.css" rel="stylesheet" />
@@ -76,11 +76,11 @@ include_once 'index.inc/index1.inc.php';
 	body{background-color: #222}
 .videolist { position:relative; float:left; width:500px; height:300px; margin-right:50px; margin-top:15px; margin-bottom:30px; }
 .videolist:hover{ cursor: pointer; }
-.videoed { display:none; width:50px; height:50px; position: absolute; left:45%; top:45%; z-index:99; border-radius:100%; }
+.videoed { display:none; width:50px; height:50px; position: absolute; left:45%; top:40%; z-index:99; border-radius:100%; }
 .videos{ display:none; border: 1px solid #080808; position:fixed; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; }
 .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
 </style>
-    
+
 </head>
 <div id="loader-wrapper">
     <div id="loader"></div>
@@ -134,8 +134,8 @@ include_once 'index.inc/index1.inc.php';
 
     <section class="breadcrumb-blog-version-one">
         <div class="single-bredcurms">
-         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">    
-			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">    
+         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">
+			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">
 			 </div>
            <div class="container">
                <div class="row">
@@ -159,13 +159,13 @@ include_once 'index.inc/index1.inc.php';
 <div class="video">
 	<div class="container" >
 		<div class="videolist" vpath="v1.jpg" ipath="ckin.mp4">
-			
-			<img src="img/v1.jpg" width="540px" height="300px" />
+
+			<img src="img/course/course9.JPG" width="540px" height="300px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
-		
-		
+
+
 		<div class="videos"></div>
 	</div>
 </div>
@@ -216,7 +216,7 @@ function close1(){
 						<br><label>第九章 宇宙探索</label>
 						<br><label>第十章 中国天文学和空间探测情况</label>
 
-						
+
 					</div>
 				</div><!--/ End Single blog -->
 
@@ -287,42 +287,40 @@ function close1(){
 					</div>
 				</div>
 
-				<div class="recent_post_wrapper widget_single">
-					<div style="width:350px;height:500px;background:white;position:relative;left:0px;top:10px;border-radius:10px">
-						<div class="items-title" style ="margin-left:20px">
-						  <h3 class="title">课程老师</h3>
-						</div>
-						<div class="single-post" style ="margin-left:20px">
-							<div class="recent_img">
-								<a href="" title=""><img src="images/blog/f4.jpg" alt="" class="img-fluid"></a>
-							</div>
-							<div class="post_title">
-								<a href="" title="">刘华骏</a>
-							 
-							</div>
-						</div>
-									
-						<div class="single-post" style ="margin-left:20px">
-							<div class="recent_img">
-								<a href="" title=""><img src="images/blog/f5.jpg" alt="" class="img-fluid"></a>
-							</div>
-							<div class="post_title">
-								<a href="" title="">徐晓辉</a>
-							  
-							</div>
-						</div>
-									
-						<div class="single-post" style ="margin-left:20px">
-							<div class="recent_img">
-								<a href="" title=""><img src="images/blog/f6.jpg" alt="" class="img-fluid"></a>
-							</div>
-							<div class="post_title">
-								<a href="" title="">黄爽</a>
-							 
-							</div>
-						</div>
-					</div>
-				</div>
+				  <div class="recent_post_wrapper widget_single">
+                              <div class="items-title">
+                                  <h3 class="title">课程老师</h3>
+                              </div>
+                              <div class="single-post">
+                                  <div class="recent_img">
+                                       <a href="" title=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F2.jpg" alt="" class="img-fluid"></a>
+                                  </div>
+                                  <div class="post_title">
+                                      <a href="" title="">刘华骏</a>
+
+                                  </div>
+                              </div>
+
+                              <div class="single-post">
+                                  <div class="recent_img">
+                                      <a href="" title=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F4.jpg" alt="" class="img-fluid"></a>
+                                  </div>
+                                  <div class="post_title">
+                                      <a href="" title="">徐晓辉</a>
+
+                                  </div>
+                              </div>
+
+                              <div class="single-post">
+                                  <div class="recent_img">
+                                      <a href="" title=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F6.jpg" alt="" class="img-fluid"></a>
+                                  </div>
+                                  <div class="post_title">
+                                      <a href="" title="">黄爽</a>
+
+                                  </div>
+                              </div>
+                          </div>
 
 
 
@@ -347,6 +345,7 @@ function close1(){
 	</div>
 </section>
 
+
 <footer class="footer-area">
 	<div class="container">
 		<div class="row">
@@ -354,11 +353,11 @@ function close1(){
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 				<div class="single-footer">
 					<div class="footer-title">
-						<h3><a href="#"><img src="images/logo.png" alt=""></a></h3>
+						<h3><a href=""><img src="images/logo.png" alt=""></a></h3>
 					</div>
 					<div class="footer-left">
 						<div class="footer-logo">
-							<p>代码全写队 </p> <p>产品经理：彭英杰 项目经理：张雷 </p><p>技术经理：马赞 </p><p>成员：汪志豪   余冠达</p>
+							<p>代码全写队 <br> 产品经理： 项目经理： 技术经理： 成员：</p>
 						</div>
 						<ul class="footer-contact">
 							<li><img class="map" src="images/icon/map.png" alt="">武汉大学</li>
@@ -382,7 +381,7 @@ function close1(){
 						<li><a href="" title="">课程评分</a></li>
 						<li><a href="person.php" title="">个人信息</a></li>
 						<li><a href="ourteam.php" title="">关于我们</a></li>
-
+						
 					</ul>
 				</div>
 			</div>	<!-- footer destination -->
@@ -435,7 +434,6 @@ function close1(){
 					</div>
 				</div>
 			</div>	<!-- footer latest news -->
-
 			<!-- footer contact -->
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3 f-phone-responsive">
 				<div class="single-footer">
@@ -453,7 +451,7 @@ function close1(){
 									<button type="submit">Send</button>
 								</li>
 								<li>
-
+									
 								</li>
 							</ul>
 						</form>
@@ -463,11 +461,11 @@ function close1(){
 							<h3>Follow Us</h3>
 						</div>
 						<ul class="footer-social-link">
-							<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+							<li class="facebook"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+							<li class="gplus"><a href="https://www.cnbeta.com"><i class="fa fa-google-plus"></i></a></li>
+							<li class="youtube"><a href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -506,7 +504,7 @@ function close1(){
 	</div>
 </div>
 <script src="js/share.js"></script>
-<script>	
+<script>
 var share = new SimpleShare({
 url: window.location.href,
 title: '公共课程',

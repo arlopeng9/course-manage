@@ -9,7 +9,7 @@ $member_id=is_login($link);
 $query="select count(*) from CM_recommend";
 $result=execute($link,$query);
 $count_recommend=mysqli_fetch_array($result);
-var_dump($count_recommend[0]);
+
 $query="select * from CM_recommend";
 
 $result=execute($link,$query);
@@ -19,22 +19,22 @@ while($recomend=mysqli_fetch_array($result)){
     $Array_all[$t]=$recomend[0];
     $t=$t+1;
 }
-var_dump($Array_all);
+
 $numbers = range (1,$count_recommend[0]);
 
 //shuffle 将数组顺序随即打乱
 shuffle ($numbers);
-var_dump($numbers);
-//array_slice 取该数组中的某一段
-$array = array_slice($numbers,0,$count_recommend[0]);
 
-var_dump($array);
+//array_slice 取该数组中的某一段
+$array = array_slice($numbers,0,6);
+
+
 $X=0;
-while( $X<$count_recommend[0] and $temp=$array[$X]  ){
-    
+while( $X<6 and $temp=$array[$X]  ){
+   $temp=$Array_all[$temp];
 $html1=<<<A
-      <html>
-      <div class="row">
+      
+   
      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
      <div class="single-package">
     <div class="package-image">
@@ -59,9 +59,10 @@ $html1=<<<A
     </div>
     </div>
     </div> 
-    </html>
+    
 A;
-echo $html1;
+if($temp==44){
+echo $html1;}
 $html2=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -88,7 +89,8 @@ $html2=<<<A
     </div>
     </div> <!-- second package end -->
 A;
- echo $html2; 
+if($temp==4){
+echo $html2;} 
  $html3=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -115,7 +117,8 @@ A;
     </div>
     </div> <!--third package end -->
 A;
- echo $html3;
+if($temp==53){
+echo $html3;} 
  
  $html4=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
@@ -124,7 +127,7 @@ A;
     <a href="course4.php"><img src="https://img-ph-mirror.nosdn.127.net/Pi-k3AX09Y8XVBePjsJJEQ==/6597828429681640478.jpg?imageView&thumbnail=223x125&quality=100" alt=""></a>
     </div>
     <div class="package-content">
-    <h3><a href="course4.php" title="">计算机思维导论</a></h3>
+    <h3><a href="course4.php" title="">计算思维导论</a></h3>
     <p>上传时间：07 02 课程ID：20182021301
     </p>
     </div>
@@ -144,7 +147,8 @@ A;
     </div> <!-- fourth package end -->
     
 A;
- echo $html4; 
+if($temp==14){
+echo $html4;}  
  $html5=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -171,7 +175,8 @@ A;
     </div>
     </div> <!-- fifth package end -->
 A;
-    echo $html5;
+if($temp==48){
+echo $html5;} 
 $html6=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -197,9 +202,10 @@ $html6=<<<A
     </div>
     </div>
     </div> <!-- sixth package end -->
-    </div>
+  
 A;
-    echo $html6;
+if($temp==63){
+echo $html6;} 
 $html7=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -226,7 +232,8 @@ $html7=<<<A
     </div>
     </div> <!-- second package end -->
 A;
-echo $html7;
+if($temp==3){
+echo $html7;} 
 $html8=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -253,7 +260,8 @@ $html8=<<<A
     </div>
     </div> <!-- second package end -->
 A;
-echo $html8;
+if($temp==15){
+echo $html8;} 
 $html9=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -261,7 +269,7 @@ $html9=<<<A
     <a href="course9.php"><img src="https://edu-image.nosdn.127.net/288647B04DED46F53F2154ABF422099B.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt=""></a>
     </div>
     <div class="package-content">
-    <h3><a href="course9.php" title="">>宇宙新概念</a></h3>
+    <h3><a href="course9.php" title="">宇宙新概念</a></h3>
     <p>上传时间：07 02 课程ID：20182022190
     </p>
     </div>
@@ -280,7 +288,8 @@ $html9=<<<A
     </div>
     </div> <!-- second package end -->
 A;
-echo $html9;
+if($temp==13){
+echo $html9;} 
 $html10=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -307,7 +316,8 @@ $html10=<<<A
     </div>
     </div> <!-- second package end -->
 A;
-echo $html10;
+if($temp==24){
+echo $html10;} 
 $html11=<<<A
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="single-package">
@@ -334,7 +344,8 @@ $html11=<<<A
     </div>
     </div> <!-- second package end -->
 A;
-echo $html11;
+if($temp==40){
+            echo $html11;} 
 
 
         
