@@ -1,0 +1,13 @@
+
+
+/*悬浮链接*/
+.suspension{position:fixed;z-index:55;right:0%;bottom:60px;width:44px;height:192px;}
+.suspension-box{position:relative;float:right;}
+.suspension .nav{display:block;width:44px;height:44px;background-color:#82878a;margin-bottom:4px;cursor:pointer;outline:none;}
+.suspension .nav.active,
+.suspension .nav:hover{background:#F05352;}
+
+
+.suspension .nav-top {background-position:-232px 0;}
+.suspension .nav-top{background:#D2D3D6;display:none;}
+.suspension .nav-top:hover{background:#c0c1c3;}
