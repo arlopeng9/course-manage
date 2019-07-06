@@ -23,14 +23,28 @@
 								<span id="score" class="lq-score-tip"></span>
 							
 							<h1 style ="color:#ff8c58;font-size:45px;margin-left:15px"><?php echo $course['course_score']?>分</h1>
-							<input type="button" value="为课程和老师打分" onclick="mizhu.open(100, 400, '<br>打分', 'index.inc/grade.php');" name="submit2" style = "border:0;width:200;color:black;margin-left:265px;margin-top:-60px;background: #37ca21;border-radius:5px">
-							<div><label style="margin-left: -200px;color:#ff8c58;margin-top:-32px"><h3>(已有58人打分)</h3></label></div>
+							
+							
 							</div>
+							<?php 
+								if(@$_COOKIE['cookie']['name']!=NULL){
+									$query="select * from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}' ";
+									$result=execute($link,$query);
+
+								if($data=mysqli_fetch_assoc($result)){
+									$url_grade ="index.inc/grade.php?course_id={$course['cID']}";
+									$html=<<<A
+							
+							<input type="button" value="为课程和老师打分" onclick="mizhu.open(600, 400, '打分', '{$url_grade}')" name="submit2" style = "border:0;width:200;color:black;margin-left:470px;margin-top:-50px;background: #37ca21;border-radius:5px">
+A;
+								echo $html;
+									}}else {?>
+								<?php }?>
+							<div><label style="margin-left: 0px;color:#ff8c58;margin-top:-32px"><h3>(已有58人打分)</h3></label></div>
 						</div>
 					</div>
 					<br><br>					
-										
-					
+								
 					
 					<?php 
 						if(@$_COOKIE['cookie']['name']!=NULL){
@@ -39,7 +53,6 @@
 
 						if($data=mysqli_fetch_assoc($result)){
 					?>
-						
 						<label style="margin-left: 30px;font-size:25px;">发表评论：</label>	
 						<br>
 						<textarea name="content" style="width:670px;height:200px;margin-left:30px;border-radius:5px" placeholder="写点什么吧……"></textarea>
@@ -93,15 +106,15 @@
 									
 			<div class=" " style ="margin-left:30px">
 				<img src = "images/touxiang2.jpg" style ="width:60px;height:60px;border-radius:50%;margin-top:20px	">
-				<div style="width:600px;height:100px;background:#eeffee;border:1;position:relative;left:80px;top:-60px;border-radius:10px">
+				<div style="width:600px;height:120px;background:#eeffee;border:1;position:relative;left:80px;top:-60px;border-radius:10px">
 					<label style="padding-left:10px;margin-top:0;color:#777777"><?php echo $data_content['comment_time'];?></label> 
 					<label style="padding-left:10px;color:#777777">情绪：<?php echo $data_content['comment_quality'];?></label> 
 					<div>
-					<label style = "margin-left:20px;margin-top:0;font-size:12;font-family:Microsoft YaHei;color:#111111"><?php echo $data_content['comment_content'];?>  </label>
+					<label style = "margin-left:20px;margin-top:0;font-size:14;font-family:Microsoft YaHei;color:#111111"><?php echo $data_content['comment_content'];?>  </label>
 					</div>
 				</div>
 				<hr style="margin-top:-40">
-				<label style="color:red;margin-left:8px;margin-top:-60px"><?php echo $data_content['student_name' ];?></label> 
+				<label style="color:red;margin-left:8px;margin-top:-68px"><?php echo $data_content['student_name' ];?></label> 
 				
 				
 			</div>
@@ -115,7 +128,7 @@
 					echo $page['html'];
 				?>
 				</div>
-				<div style="clear:both;"></div>
+				<div style="clear:both;"></div>			
 			</div>
 		</div>
 	</div>
