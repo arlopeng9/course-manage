@@ -345,8 +345,7 @@ function close1(){
 		</div><!-- ./ End  Blog Right Wrapper--><!-- ./ End  Blog Right Wrapper-->
 			   
 	</div>
-
-
+</section>
 
 <footer class="footer-area">
 	<div class="container">
@@ -355,11 +354,11 @@ function close1(){
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 				<div class="single-footer">
 					<div class="footer-title">
-						<h3><a href=""><img src="images/logo.png" alt=""></a></h3>
+						<h3><a href="#"><img src="images/logo.png" alt=""></a></h3>
 					</div>
 					<div class="footer-left">
 						<div class="footer-logo">
-							<p>代码全写队 <br> 产品经理： 项目经理： 技术经理： 成员：</p>
+							<p>代码全写队 </p> <p>产品经理：彭英杰 项目经理：张雷 </p><p>技术经理：马赞 </p><p>成员：汪志豪   余冠达</p>
 						</div>
 						<ul class="footer-contact">
 							<li><img class="map" src="images/icon/map.png" alt="">武汉大学</li>
@@ -383,7 +382,7 @@ function close1(){
 						<li><a href="" title="">课程评分</a></li>
 						<li><a href="person.php" title="">个人信息</a></li>
 						<li><a href="ourteam.php" title="">关于我们</a></li>
-						
+
 					</ul>
 				</div>
 			</div>	<!-- footer destination -->
@@ -397,39 +396,39 @@ function close1(){
 						<ul class="recent-post">
 							<li>
 								<a href="course5.php">
-									<div class="post-thum">
+									<span class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/8282FBC079673EA3A28339617E2F69E5.jpg?imageView&thumbnail=510y288&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</div>
-									<div class="post-content">
-										<p>课程名 :</p><br><p>身边的材料学 </p>
-                                       <br><p>课程ID：20182018155</p>
-										
-										
-									</div>
+									</span>
+									<span class="post-content">
+										<label>课程名 :</label><br><label>身边的材料学 </label>
+                                       <br><label>课程ID：20182018155</label>
+
+
+									</span>
 								</a>
 							</li>
 							<li>
 								<a href="course3.php">
-									<div class="post-thum">
+									<span class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/821FF02EBD63421A183F6F4A41AAEEA0.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</div>
-									<div class="post-content">
-										<p>课程名 :</p><br><p>信息安全概论 </p>
-                                        <br><p>课程ID：20182047080</p>
-										
-									</div>
+									</span>
+									<span class="post-content">
+										<label>课程名 :</label><br><label>信息安全概论 </label>
+                                        <br><label>课程ID：20182047080</label>
+
+									</span>
 								</a>
 							</li>
 							<li>
 								<a href="course1.php">
-									<div class="post-thum">
+									<span class="post-thum">
 										<img src="https://edu-image.nosdn.127.net/4A5DADAAACFEEFE79DFF9C19E626C659.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt="" class="img-rounded"style="width: 200px;height: 120px;">
-									</div>
-									<div class="post-content">
-										<p>课程名 :</p><br><p>C语言程序设计 </p>
-                                        <br><p>课程ID：20182047086</p>
-										
-									</div>
+									</span>
+									<span class="post-content">
+										<label>课程名 :</label><br><label>C语言程序设计 </label>
+                                        <br><label>课程ID：20182047086</label>
+
+									</span>
 								</a>
 							</li>
 						</ul>
@@ -454,7 +453,7 @@ function close1(){
 									<button type="submit">Send</button>
 								</li>
 								<li>
-									
+
 								</li>
 							</ul>
 						</form>
