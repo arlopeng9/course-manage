@@ -6,10 +6,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="../	css/lq-score.css">
+<link href="../css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/demo.css">
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/lq-score.min.js"></script>
+<script src="../js/ui.js"></script>
+<style>
+	.submit {
+		-webkit-border-radius: 14;
+		-moz-border-radius: 14;
+		border-radius: 14px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 17px;
+		background: #3498db;
+		padding: 12px 30px 12px 30px;
+		text-decoration: none;
+	}
 
+	.submit:hover {
+		background: #2980b9;
+		background-image: -webkit-linear-gradient(top, #2980b9, #3498db);
+		background-image: -moz-linear-gradient(top, #2980b9, #3498db);
+		background-image: -ms-linear-gradient(top, #2980b9, #3498db);
+		background-image: -o-linear-gradient(top, #2980b9, #3498db);
+		background-image: linear-gradient(to bottom, #2980b9, #3498db);
+		color: #ffffff;
+		text-decoration: none;
+	}
+</style>		
 <script>
 	/*
 	属性参数介绍：
@@ -30,7 +55,11 @@
 			$tipEle: $("#course"),
 			tips: "default",
 			fontSize: "35px",
-			isReScore: true//允许重新评分
+			isReScore: true,//允许重新评分
+			callBack: function (score, ele) {
+				var cscore = document.getElementById('cscore');
+				cscore.value = score;
+			}
 			//如果需要设置后还能评分，请添加[isReScore:true]属性
 		});
 
@@ -39,23 +68,32 @@
 			$tipEle: $("#teacher"),
 			tips: "default",
 			fontSize: "35px",
-			isReScore: true//允许重新评分
+			isReScore: true,//允许重新评分
+			callBack: function (score, ele) {
+			var tscore = document.getElementById('tscore');
+			tscore.value = score;
+		}
 		});
 
+
 	});
+	
+
 </script>
+
 
 </head>
 <body>
 
 <div style="width:150px;">
-
+	<form method = "post">
 	<div style="width:200px;margin-left:200px">
 			<p><b>课程分数：</b></p>
 			<div class="#">
 				<div id="course_grade"></div>
 				<div class="myapp-tip">
 					<span id="course" class="lq-score-tip"></span>
+					<input  name = "cscore"  id = "cscore" type = "hidden">
 				</div>
 			</div>
 			
@@ -75,6 +113,7 @@
 				<div id="teacher_grade"></div>
 				<div class="myapp-tip">
 					<span id="teacher" class="lq-score-tip"></span>
+					<input name = "tscore" id = "tscore" type = "hidden">
 				</div>
 			</div>
 		
@@ -83,12 +122,42 @@
 	<br>
 	<br>
 	<hr width=565 style = "margin-left:-100">
-	<input type="button" value="提交分数" onclick="mizhu.open(100, 400, '<br>打分', 'course9.php');" name="submit" style = "border:0;font-size:30px;width:200;color:black;margin-left:230px;margin-top:20px;background: #37ca21;border-radius:5px">
+	<input type="submit" class = "submit" value="提交分数"  name="submit" style = "margin-left:200px">
+	<?php
+	include_once '../inc/config.inc.php';
+	include_once '../inc/mysql.inc.php';
+	include_once '../inc/tool.inc.php';
+	include_once '../inc/page.inc.php';
+	$link=connect();
+		if(isset($_POST['submit'])){
+		$query="select * from CM_student where register_name='{$_COOKIE['cookie']['name']}'";
+		$result=execute($link,$query);
+		$student_course=mysqli_fetch_array($result);
+		if(empty($_POST['cscore']) && empty($_POST['tscore'])){
+			echo "<script type=text/javascript>mizhu.toast('评分为空');</script>";
+		}else{
+		if(!empty($_POST['cscore'])){
+		$query1="update CM_student_course set sc_course_score = {$_POST['cscore']} where student_number='{$student_course['student_number']}' and cID='{$_GET['course_id']}' ";
+		if(!execute($link,$query1)){
+			echo "<script type=text/javascript>mizhu.toast('打分失败！');</script>";
+		}
+		}
+		if(!empty($_POST['tscore'])){
+		$query2="update CM_student_course set sc_teacher_score = {$_POST['tscore']} where student_number='{$student_course['student_number']}' and cID='{$_GET['course_id']}' ";
+		if(!execute($link,$query2)){
+			echo "<script type=text/javascript>mizhu.toast('打分失败！');</script>";
+		}
+		}
+		echo "<script type=text/javascript>mizhu.toast('打分成功！');setTimeout(function(){window.parent.mizhu.close();},2000)</script>";
+		}
+		}
+	?>
 	<!------------------------------------------------------->
 
 	<!------------------------demo6-------------------------->
-
+	</form>
 </div>
 
 </body>
+	
 </html>
