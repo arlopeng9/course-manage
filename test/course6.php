@@ -71,8 +71,6 @@ $query="select * from CM_course where course_id='{$course_id}'";
     <link rel="stylesheet" href="css2/master.css">
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	
-	 <link rel="stylesheet" href="css2/nav.css">
  <!-- 视频 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -84,7 +82,7 @@ body{background-color: #222}
 .videos{ display:none; border: 1px solid #080808; position:fixed; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; }
 .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
 </style>
-    <label id="result" ></label>
+    
 </head>
 <div id="loader-wrapper">
     <div id="loader"></div>
@@ -484,25 +482,7 @@ function close1(){
 		</div>
 	</div>
 </footer> <!-- end footer -->
-<div class="suspension">
-	<div class="suspension-box">
-	<a href="javascript:share.weibo();" class="nav"><img src="images/weibo.jpg" width="44px" height="44px"></a>
-<a href="javascript:share.qzone();" class="nav"><img src="images/qzone.jpg" width="44px" height="44px"></a>
-<a  href="javascript:share.qq();" class="nav"><img src="images/qq.jpg" width="44px" height="44px" ></a>
-<a href="javascript:share.weixin();" class="nav"><img src="images/weixin.jpg"width="44px" height="44px" ></a>
 
-	</div>
-</div>
-<script src="js/share.js"></script>
-<script>	
-var share = new SimpleShare({
-url: window.location.href,
-title: '公共课程',
-content: '这门课真的不错',
-pics: ''
-});
-
-</script><!-- fenxiang end -->
 <div class="to-top pos-rtive">
     <a href="#"><i class = "fa fa-angle-up"></i></a>
 </div><!-- Scroll to top-->

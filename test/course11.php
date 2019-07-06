@@ -70,9 +70,6 @@ $query="select * from CM_course where course_id='{$course_id}'";
     <!-- responsive css -->
     <link rel="stylesheet" href="css2/responsive.css">
     <link rel="stylesheet" href="css2/master.css">
-	
-	
-	 <link rel="stylesheet" href="css2/nav.css">
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
  <!-- 视频 -->
@@ -473,26 +470,7 @@ function close1(){
 		</div>
 	</div>
 </footer> <!-- end footer -->
-<!-- fenxiang start -->
-<div class="suspension">
-	<div class="suspension-box">
-	<a href="javascript:share.weibo();" class="nav"><img src="images/weibo.jpg" width="44px" height="44px"></a>
-<a href="javascript:share.qzone();" class="nav"><img src="images/qzone.jpg" width="44px" height="44px"></a>
-<a  href="javascript:share.qq();" class="nav"><img src="images/qq.jpg" width="44px" height="44px" ></a>
-<a href="javascript:share.weixin();" class="nav"><img src="images/weixin.jpg"width="44px" height="44px" ></a>
 
-	</div>
-</div>
-<script src="js/share.js"></script>
-<script>	
-var share = new SimpleShare({
-url: window.location.href,
-title: '公共课程',
-content: '这门课真的不错',
-pics: ''
-});
-
-</script><!-- fenxiang end -->
 <div class="to-top pos-rtive">
     <a href="#"><i class = "fa fa-angle-up"></i></a>
 </div><!-- Scroll to top-->

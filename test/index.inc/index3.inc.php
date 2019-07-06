@@ -75,17 +75,8 @@
 						date_default_timezone_set('PRC');
 						$time=date('20y年m月d日  h:i:sa', time());
 						echo $time;
-                        exec("python E:/PHP/htdocs/test/python/sensitive_words_analysis.py {$_POST['content']}", $out, $res);
-                        $data = $out[0];
-						if($data == $_POST['content'] )  //若语义分析未识别到敏感词 ，进行情感分析
-						{
-							exec("python E:/PHP/htdocs/test/python/model_predict.py {$_POST['content']}", $out1, $res);
-							$quality = $out1[0];
-						}else{                   //若语义分析识别到敏感词   情感分析为bad
-							$quality = 'bad';
-						}
 						@$query="insert into CM_comment (course_id,student_name,comment_time,comment_quality,comment_content,comment_photo) values('{$course['course_id']}',
-						'{$student_course['student_name']}','{$time}','{$quality}','{$data}','')";
+						'{$student_course['student_name']}','{$time}','','{$_POST['content']}','')";
 						execute($link,$query);
 						skipto($adress,'ok','登录成功！');
 						   
