@@ -24,7 +24,7 @@
 
 
 </head>
-<body bgcolor = "#eeeeee">
+<body bgcolor = "">
 <section>
 		<div class="ydc-content-slide ydc-body">
 			<div class="ydc-flex">
@@ -62,7 +62,9 @@
 								</span>
 								<ul>
 									<li>
-										<a href="lishi.php">学习历史</a>
+										<a href="lishi.php" title="学习历史"<?php if($php=='lishi'){echo 'class="active"';}?>> <i class=" fa fa-fw fa-gear"></i>
+                                        <span>学习历史</span>
+                                         </a>
 									</li>
 									
 									
@@ -74,8 +76,12 @@
 								</span>
 								<ul>
 									<li>
-										<a href="xinxi.php">账号信息</a>
+										<a href="zhanghao.php" title="账号信息"<?php if($php=='zhanghao'){echo 'class="active"';}?>> <i class=" fa fa-fw fa-gear"></i>
+                                        <span>账号信息</span>
+                                         </a>
 									</li>
+									</ul>
+									<ul>
 									<li>
 										<a href="xueji.php" title="学籍绑定"<?php if($php=='xueji'){echo 'class="active"';}?>> <i class=" fa fa-fw fa-gear"></i>
                                         <span>学籍绑定</span>

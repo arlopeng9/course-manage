@@ -12,5 +12,5 @@
                                     <span><i class="fa fa-comments"></i>65 Comments</span>
 									<button  class="travel-booking-btn hvr-shutter-out-horizontal" type="submit" name="xuanke" style="margin-left: 300px;"><?php 
                                     if(@$_COOKIE['cookie']['name']==NULL){echo '选择课程';}else{$query="select*from CM_student_course where student_number='{$student_course['student_number']}' and cID='{$course['cID']}'";
-   $result_name=execute($link,$query); if(mysqli_fetch_assoc($result_name)){echo '已选';}else{echo '选择课程';}}?></button>
+   $result_name=execute($link,$query); if(mysqli_fetch_assoc($result_name)){echo '已选,点击可撤课';}else{echo '选择课程';}}?></button>
                                 </div></Form>

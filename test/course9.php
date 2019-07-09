@@ -2,13 +2,15 @@
 include_once 'inc/config.inc.php';
 include_once 'inc/mysql.inc.php';
 include_once 'inc/tool.inc.php';
-include_once 'inc/page.inc.php';
+include_once 'inc/page.inc2.php';
+
 $link=connect();
 $member_id=is_login($link);
 $template['css']=array('style/public.css');
 foreach ($template['css'] as $val){
     echo "<link rel='stylesheet' type='text/css' href='{$val}' />";
-}$course_id='20182022190';
+}
+$course_id='20182023104';
 $adress='course9.php ';
 
 include_once 'index.inc/index1.inc.php';
@@ -17,71 +19,7 @@ include_once 'index.inc/index1.inc.php';
 <?php include_once 'inc/head.inc.php';
 // var_dump($_COOKIE['cookie']);?>
 
-<!DOCTYPE html>
-<html class="no-js" lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!-- Google Fonts Includes -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <!-- Favi icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- bootstrap v3.3.6 css -->
-    <link rel="stylesheet" href="css2/assets/bootstrap.min.css">
-    <!-- animate css -->
-    <link rel="stylesheet" href="css2/assets/animate.css">
-    <!-- Button Hover animate css -->
-    <link rel="stylesheet" href="css2/assets/hover-min.css">
-    <!-- jquery-ui.min css -->
-    <link rel="stylesheet" href="css2/assets/jquery-ui.min.css">
-    <!-- meanmenu css -->
-    <link rel="stylesheet" href="css2/assets/meanmenu.min.css">
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" href="css2/assets/owl.carousel.min.css">
-    <!-- slick css -->
-    <link rel="stylesheet" href="css2/assets/slick.css">
-    <!-- chosen.min-->
-    <link rel="stylesheet" href="css2/assets/jquery-customselect.css">
-    <!-- font-awesome css -->
-    <link rel="stylesheet" href="css2/assets/font-awesome.min.css">
-    <!-- magnific Css -->
-    <link rel="stylesheet" href="css2/assets/magnific-popup.css">
-    <!-- Revolution Slider -->
-    <link rel="stylesheet" href="css2/assets/revolution/layers.css">
-    <link rel="stylesheet" href="css2/assets/revolution/navigation.css">
-    <link rel="stylesheet" href="css2/assets/revolution/settings.css">
-    <!-- Preloader css -->
-    <link rel="stylesheet" href="css2/assets/preloader.css"> 
-    <!-- custome css -->
-    <link rel="stylesheet" href="css2/style.css">
-    <!-- responsive css -->
-    <link rel="stylesheet" href="css2/responsive.css">
-    <link rel="stylesheet" href="css2/master.css">
-	<link rel="stylesheet" href="css/lq-score.css">
-	<link rel="stylesheet" href="css/demo.css">
-
-	 <link rel="stylesheet" href="css2/nav.css">
-	<!-- alert css-->
-	<link href="css/style.css" rel="stylesheet" />
-    <!-- modernizr css -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	<!-- 视频 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-	body{background-color: #222}
-.videolist { position:relative; float:left; width:500px; height:300px; margin-right:50px; margin-top:15px; margin-bottom:30px; }
-.videolist:hover{ cursor: pointer; }
-.videoed { display:none; width:50px; height:50px; position: absolute; left:45%; top:40%; z-index:99; border-radius:100%; }
-.videos{ display:none; border: 1px solid #080808; position:fixed; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; }
-.vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
-</style>
-
-</head>
+<?php include_once 'index.inc/index4.inc.php';?>
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
@@ -131,11 +69,11 @@ include_once 'index.inc/index1.inc.php';
         </div>
     </div> <!-- header-bottom area end here -->
 </header> <!-- header area end here -->
-
+	
     <section class="breadcrumb-blog-version-one">
         <div class="single-bredcurms">
-         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">
-			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">
+         <div id="Layer1" style="position: absolute ; left:0px; top:0px;width:100%; height:130%; z-index:-1">    
+			 <img src="http://img.1ppt.com/uploads/allimg/1812/1_181225152355_1.jpg"  style=" width:100%;height:450px;">    
 			 </div>
            <div class="container">
                <div class="row">
@@ -149,6 +87,7 @@ include_once 'index.inc/index1.inc.php';
             </div>
         </div>
     </section><!-- blog breadcrumb version one end here -->
+	
 <section id="blog" class="section-paddings single section page blog_wrapper">
 <div class="container">
 <div class="row">
@@ -159,13 +98,13 @@ include_once 'index.inc/index1.inc.php';
 <div class="video">
 	<div class="container" >
 		<div class="videolist" vpath="v1.jpg" ipath="ckin.mp4">
-
-			<img src="img/course/course9.JPG" width="540px" height="300px" />
+			
+			<img src="img/v1.jpg" width="540px" height="300px" />
 			<div class="vtime">2018-06-22</div>
 			<img src="img/play.png" class="videoed">
 		</div>
-
-
+		
+		
 		<div class="videos"></div>
 	</div>
 </div>
@@ -216,7 +155,7 @@ function close1(){
 						<br><label>第九章 宇宙探索</label>
 						<br><label>第十章 中国天文学和空间探测情况</label>
 
-
+						
 					</div>
 				</div><!--/ End Single blog -->
 
@@ -287,40 +226,42 @@ function close1(){
 					</div>
 				</div>
 
-				  <div class="recent_post_wrapper widget_single">
-                              <div class="items-title">
-                                  <h3 class="title">课程老师</h3>
-                              </div>
-                              <div class="single-post">
-                                  <div class="recent_img">
-                                       <a href="" title=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F2.jpg" alt="" class="img-fluid"></a>
-                                  </div>
-                                  <div class="post_title">
-                                      <a href="" title="">刘华骏</a>
-
-                                  </div>
-                              </div>
-
-                              <div class="single-post">
-                                  <div class="recent_img">
-                                      <a href="" title=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F4.jpg" alt="" class="img-fluid"></a>
-                                  </div>
-                                  <div class="post_title">
-                                      <a href="" title="">徐晓辉</a>
-
-                                  </div>
-                              </div>
-
-                              <div class="single-post">
-                                  <div class="recent_img">
-                                      <a href="" title=""><img src="https://mazan-1259499226.cos.ap-shanghai.myqcloud.com/%E5%A4%B4%E5%83%8F6.jpg" alt="" class="img-fluid"></a>
-                                  </div>
-                                  <div class="post_title">
-                                      <a href="" title="">黄爽</a>
-
-                                  </div>
-                              </div>
-                          </div>
+				<div class="recent_post_wrapper widget_single">
+					<div style="width:350px;height:500px;background:white;position:relative;left:0px;top:10px;border-radius:10px">
+						<div class="items-title" style ="margin-left:20px">
+						  <h3 class="title">课程老师</h3>
+						</div>
+						<div class="single-post" style ="margin-left:20px">
+							<div class="recent_img">
+								<a href="" title=""><img src="images/blog/f4.jpg" alt="" class="img-fluid"></a>
+							</div>
+							<div class="post_title">
+								<a href="" title="">刘华骏</a>
+							 
+							</div>
+						</div>
+									
+						<div class="single-post" style ="margin-left:20px">
+							<div class="recent_img">
+								<a href="" title=""><img src="images/blog/f5.jpg" alt="" class="img-fluid"></a>
+							</div>
+							<div class="post_title">
+								<a href="" title="">徐晓辉</a>
+							  
+							</div>
+						</div>
+									
+						<div class="single-post" style ="margin-left:20px">
+							<div class="recent_img">
+								<a href="" title=""><img src="images/blog/f6.jpg" alt="" class="img-fluid"></a>
+							</div>
+							<div class="post_title">
+								<a href="" title="">黄爽</a>
+							 
+							</div>
+						</div>
+					</div>
+				</div>
 
 
 
@@ -345,7 +286,6 @@ function close1(){
 	</div>
 </section>
 
-
 <footer class="footer-area">
 	<div class="container">
 		<div class="row">
@@ -353,11 +293,11 @@ function close1(){
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 				<div class="single-footer">
 					<div class="footer-title">
-						<h3><a href=""><img src="images/logo.png" alt=""></a></h3>
+						<h3><a href="#"><img src="images/logo.png" alt=""></a></h3>
 					</div>
 					<div class="footer-left">
 						<div class="footer-logo">
-							<p>代码全写队 <br> 产品经理： 项目经理： 技术经理： 成员：</p>
+							<p>代码全写队 </p> <p>产品经理：彭英杰 项目经理：张雷 </p><p>技术经理：马赞 </p><p>成员：汪志豪   余冠达</p>
 						</div>
 						<ul class="footer-contact">
 							<li><img class="map" src="images/icon/map.png" alt="">武汉大学</li>
@@ -381,7 +321,7 @@ function close1(){
 						<li><a href="" title="">课程评分</a></li>
 						<li><a href="person.php" title="">个人信息</a></li>
 						<li><a href="ourteam.php" title="">关于我们</a></li>
-						
+
 					</ul>
 				</div>
 			</div>	<!-- footer destination -->
@@ -434,6 +374,7 @@ function close1(){
 					</div>
 				</div>
 			</div>	<!-- footer latest news -->
+
 			<!-- footer contact -->
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3 f-phone-responsive">
 				<div class="single-footer">
@@ -451,7 +392,7 @@ function close1(){
 									<button type="submit">Send</button>
 								</li>
 								<li>
-									
+
 								</li>
 							</ul>
 						</form>
@@ -461,11 +402,11 @@ function close1(){
 							<h3>Follow Us</h3>
 						</div>
 						<ul class="footer-social-link">
-							<li class="facebook"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-							<li class="twitter"><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-							<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-							<li class="gplus"><a href="https://www.cnbeta.com"><i class="fa fa-google-plus"></i></a></li>
-							<li class="youtube"><a href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+							<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -504,7 +445,7 @@ function close1(){
 	</div>
 </div>
 <script src="js/share.js"></script>
-<script>
+<script>	
 var share = new SimpleShare({
 url: window.location.href,
 title: '公共课程',
@@ -515,120 +456,8 @@ pics: ''
 </script><!-- fenxiang end -->
 <div class="to-top pos-rtive">
     <a href="#"><i class = "fa fa-angle-up"></i></a>
-</div><!-- Scroll to top-->
-
-    <!-- ============================
-            JavaScript Files
-    ============================= -->
-
-    <!-- jquery latest version -->
-    <!-- <script src="js/vendor/jquery-3.2.0.min.js"></script>-->
-	<!--<script src="js/jquery-1.7.1.min.js"></script>-->
-	<script src="js/ui.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/lq-score.min.js"></script>
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>  
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- owl.carousel js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <!-- meanmenu js -->
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <!-- jquery-ui js -->
-    <script src="js/jquery-ui.min.js"></script>
-    <!-- wow js -->
-    <script src="js/wow.min.js"></script>
-    <!-- counter js -->
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Countdown js -->
-    <script src="js/jquery.countdown.min.js"></script>
-    <!-- waypoints js -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Isotope js -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <!-- magnific js -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Image loaded js -->
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- chossen js -->
-    <script src="js/chosen.jquery.min.js"></script>
-    <!-- Jquery plugin -->
-    <script src="js/plugins.js"></script>
-    <!-- select2 js plugin -->
-    <script src="js/select2.min.js"></script>    
-    <script src="js/colors.js"></script>
-    <!-- Jquery plugin -->
-    <script src="js/jquery-customselect.js"></script>
-    <!-- main js -->
-    <script src="js/custom.js"></script>
-	
-	<script>
-		/*
-		属性参数介绍：
-			$tipEle--------提示元素，请传入jquery对象
-			fontSize-------大小，字符串类型
-			isReScore------是否允许重新评分
-			tips-----------提示，可以是default默认消息，可以传模板字符串，也可以传长度为5的数组
-			zeroTip--------无分数提示，字符串类型
-			score----------分数，小数、整数都可以
-			callBack-------评分回调，会返回分数和插件元素李，例：function(score,ele){}
-			content--------内容
-			defultColor----默认颜色(未选中的颜色)
-			selectColor----选中后的颜色，可以传单个字符串，也可以传长度为5的数组
-		*/
-		$(function () {
-			//demo1
-			$("#demo1").lqScore();
-			//demo2
-			$("#demo2").lqScore({
-				callBack: function (score, ele) {
-					alert(score);
-				}
-			});
-			//demo3
-			$("#demo3").lqScore({
-				$tipEle: $("#tip3"), //提示必须要指定显示的元素，显示样式由你自己定义，如果你不擅长css，可以使用demo中的样式
-				tips: ["不推荐", "一般", "不错", "很棒", "极力推荐！"],
-				zeroTip: "未评分"
-			});
-			//demo4
-			$("#comment").lqScore({
-				$tipEle: $("#score"),
-				score: <?php echo $course['course_score']?>,
-				fontSize:"35px"
-				//如果需要设置后还能评分，请添加[isReScore:true]属性
-			});
-			//demo5
-			$("#demo5").lqScore({
-				content: "♀" //可以传图标
-			});
-			//demo6
-			$("#demo6").lqScore({
-				fontSize: "35px"
-			});
-			//demo7
-			$("#demo7").lqScore({
-				//此处修改为单颜色，若需要修改为多颜色，请传入长度为5的数组
-				selectColor: "#8eb9f5",
-			});
-			//demo8
-			$("#demo8").lqScore({
-				isReScore: true//允许重新评分
-			});
-			//demo9
-			$("#demo9").lqScore({
-				$tipEle: $("#tip9"),
-				tips: "default" //默认提示
-			});
-			//demo10
-			$("#demo10").lqScore({
-				$tipEle: $("#tip10"),
-				tips: "我是{{lq-score}}" //  {{lq-score}}这是一个模板，分数值会将其替换
-			});
-		});
-	</script>
+</div>
+<?php include_once 'index.inc/index5.inc.php';?>
 
 </body>
 </html>

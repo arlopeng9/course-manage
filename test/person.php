@@ -43,7 +43,7 @@ $php='person';
 </head>
 <body>
 
-
+<?php include_once 'inc/person_head.php';?>
 
 <!-- content YDC begin -->
 	<?php include_once 'inc/leaft_head.php';?>
@@ -78,30 +78,29 @@ $php='person';
 										</a>
 									</dl>
 								</div>
-								<button class="btn ydc-ne-carousel" onclick="javascript:window.location.href='release.html';">
-									<i class="ydc-icon-shu"></i>
-									<span>学习心得</span>
-								</button>
+								
 							</div>
-							<!--  <div class="ydc-right-banner">
+							<!--广告
+							<div class="ydc-right-banner">
 								<div class="slideshow-container">
 									<a href="https://baidu.com/" target="_blank" class="mySlides fade">
-										<img src="" style="width:100%">
+										<img src="person/images/ad/ad1.jpg" style="width:100%">
 									</a>
 									<a href="https://baidu.com" target="_blank" class="mySlides fade">
-										<img src="" style="width:100%">
+										<img src="person/images/ad/ad2.jpg" style="width:100%">
 									</a>
 									<a href="http://www.baidu.com/" target="_blank" class="mySlides fade">
-										<img src="" style="width:100%">
+										<img src="person/images/ad/ad3.jpg" style="width:100%">
 									</a>
 								</div>
-							</div>-->
+							</div>
+							-->
 							<!-- gongGao begin -->
 							<div class="ydc-loading-box">
 								<div class="ydc-tabPanel">
 									<div>
 										<ul>
-											<li class="hit">公告栏</li>
+											<li >公告栏</li>
 										</ul>
 
 									</div>

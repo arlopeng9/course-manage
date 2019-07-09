@@ -13,7 +13,7 @@ $template['css']=array('style/xuanze.css');
 foreach ($template['css'] as $val){
     echo "<link rel='stylesheet' type='text/css' href='{$val}' />";
 }
-$php='class1';
+$php='lishi';
 ?>
 
 

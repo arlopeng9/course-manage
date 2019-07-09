@@ -11,8 +11,8 @@ $page：分页的get参数
 function page($count,$page_size,$num_btn=10,$page='page'){
 	if($count==0){//如果没有记录则直接返回空的字符串
 		$data=array(
-				'limit'=>'',
-				'html'=>''
+			'limit'=>'',
+			'html'=>''
 		);
 		return $data;
 	}
@@ -44,13 +44,15 @@ function page($count,$page_size,$num_btn=10,$page='page'){
 		$url="{$current_path}?{$page}=";
 	}
 	$html=array();
+	
 	if($num_btn>=$page_num_all){
 		//把所有的页码按钮全部显示
 		for($i=1;$i<=$page_num_all;$i++){//这边的$page_num_all是限制循环次数以控制显示按钮数目的变量,$i是记录页码号
 			if($_GET[$page]==$i){
+				
 				$html[$i]="<span>{$i}</span>";
 			}else{
-				$html[$i]="<a href='{$url}{$i}'>{$i}</a>";
+				$html[$i]="<a class = 'ydc-previous-item-btn-medium' href='{$url}{$i}'>{$i}</a>";
 			}
 		}
 	}else{
@@ -65,9 +67,10 @@ function page($count,$page_size,$num_btn=10,$page='page'){
 		}
 		for($i=0;$i<$num_btn;$i++){
 			if($_GET[$page]==$start){
-				$html[$start]="<span>{$start}</span>";
+				//被选中的页码显示为红色
+				$html[$start]="<span class = 'ydc-previous-item-btn-medium cur'>{$start}</span>";
 			}else{
-				$html[$start]="<a href='{$url}{$start}'>{$start}</a>";
+				$html[$start]="<a class = 'ydc-previous-item-btn-medium ' href='{$url}{$start}'>{$start}</a>";
 			}
 			$start++;
 		}
@@ -79,21 +82,25 @@ function page($count,$page_size,$num_btn=10,$page='page'){
 			$key_end=key($html);
 			if($key_first!=1){
 				array_shift($html);
-				array_unshift($html,"<a href='{$url}=1'>1...</a>");
+				array_unshift($html,"<a class = 'ydc-previous-item-btn-medium ' href='{$url}1'>1...</a>");
 			}
 			if($key_end!=$page_num_all){
 				array_pop($html);
-				array_push($html,"<a href='{$url}={$page_num_all}'>...{$page_num_all}</a>");
+				array_push($html,"<a class = 'ydc-previous-item-btn-medium' href='{$url}{$page_num_all}'>...{$page_num_all}</a>");
 			}
 		}
 	}
 	if($_GET[$page]!=1){
 		$prev=$_GET[$page]-1;
-		array_unshift($html,"<a href='{$url}{$prev}'>« 上一页</a>");
+		array_unshift($html,"<div style='margin-left:150'><a  class='ydc-previous-item-btn-medium' href='{$url}{$prev}'><span>« 上一页</span></a>");
 	}
+	if($_GET[$page]==1){
+		array_unshift($html,"<div style='margin-left:150'><a  class='ydc-previous-item-btn-medium ydc-disabled' href='javascript:;'><span>« 上一页</span></a>");
+	}
+
 	if($_GET[$page]!=$page_num_all){
 		$next=$_GET[$page]+1;
-		array_push($html,"<a href='{$url}{$next}'>下一页 »</a>");
+		array_push($html,"<a class='ydc-previous-item-btn-medium' href='{$url}{$next}'><span>下一页 »</span></a></div>");
 	}
 	$html=implode(' ',$html);
 	$data=array(
@@ -103,3 +110,5 @@ function page($count,$page_size,$num_btn=10,$page='page'){
 	return $data;
 }
 ?>
+
+

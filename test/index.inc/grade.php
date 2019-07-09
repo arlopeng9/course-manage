@@ -138,17 +138,24 @@
 		}else{
 		if(!empty($_POST['cscore'])){
 		$query1="update CM_student_course set sc_course_score = {$_POST['cscore']} where student_number='{$student_course['student_number']}' and cID='{$_GET['course_id']}' ";
-		if(!execute($link,$query1)){
+		$result1 = execute($link,$query1);
+		if(!$result1){
 			echo "<script type=text/javascript>mizhu.toast('打分失败！');</script>";
+		}else{
+			echo "<script type=text/javascript>mizhu.toast('打分成功！');setTimeout(function(){window.parent.mizhu.close();},2000)</script>";
 		}
 		}
 		if(!empty($_POST['tscore'])){
 		$query2="update CM_student_course set sc_teacher_score = {$_POST['tscore']} where student_number='{$student_course['student_number']}' and cID='{$_GET['course_id']}' ";
-		if(!execute($link,$query2)){
+		$result2 = execute($link,$query2);
+		
+		if(!$result2){
 			echo "<script type=text/javascript>mizhu.toast('打分失败！');</script>";
+		}else{
+			echo "<script type=text/javascript>mizhu.toast('打分成功！');setTimeout(function(){window.parent.mizhu.close();},2000)</script>";
 		}
 		}
-		echo "<script type=text/javascript>mizhu.toast('打分成功！');setTimeout(function(){window.parent.mizhu.close();},2000)</script>";
+		
 		}
 		}
 	?>

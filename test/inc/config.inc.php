@@ -9,6 +9,10 @@ define('DB_PORT',10094);
 $IDman=1;
 $GLOBALS['IDman'];
 
+define('SA_PATH',dirname(dirname(__FILE__)));
+define('SUB_URL','/test/');
+
+
 
 
 

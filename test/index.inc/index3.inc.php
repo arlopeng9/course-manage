@@ -11,7 +11,7 @@
 		<div style="width:730px;height:1050px;background:white;position:relative;left:0px;top:20px;border-radius:10px">
 			<div class="comment-list-wrapper">
 				
-					<div><!--星-->
+							<div><!--星-->
 					<Form method="post">	
 					<label style="margin-left: 30px;font-size:25px;">课程分数：</label>
 						
@@ -43,8 +43,8 @@ A;
 							<div><label style="margin-left: 0px;color:#ff8c58;margin-top:-32px"><h3>(已有58人打分)</h3></label></div>
 						</div>
 					</div>
-					<br><br>					
-								
+					<br><br>		
+					
 					
 					<?php 
 						if(@$_COOKIE['cookie']['name']!=NULL){
@@ -53,6 +53,7 @@ A;
 
 						if($data=mysqli_fetch_assoc($result)){
 					?>
+						
 						<label style="margin-left: 30px;font-size:25px;">发表评论：</label>	
 						<br>
 						<textarea name="content" style="width:670px;height:200px;margin-left:30px;border-radius:5px" placeholder="写点什么吧……"></textarea>
@@ -83,8 +84,17 @@ A;
 						date_default_timezone_set('PRC');
 						$time=date('20y年m月d日  h:i:sa', time());
 						echo $time;
+                        exec("python E:/PHP/htdocs/test/python/sensitive_words_analysis.py {$_POST['content']}", $out, $res);
+                        $data = $out[0];
+						if($data == $_POST['content'] )  //若语义分析未识别到敏感词 ，进行情感分析
+						{
+							exec("python E:/PHP/htdocs/test/python/model_predict.py {$_POST['content']}", $out1, $res);
+							$quality = $out1[0];
+						}else{                   //若语义分析识别到敏感词   情感分析为bad
+							$quality = 'bad';
+						}
 						@$query="insert into CM_comment (course_id,student_name,comment_time,comment_quality,comment_content,comment_photo) values('{$course['course_id']}',
-						'{$student_course['student_name']}','{$time}','','{$_POST['content']}','')";
+						'{$student_course['student_name']}','{$time}','{$quality}','{$data}','')";
 						execute($link,$query);
 						skipto($adress,'ok','登录成功！');
 						   
@@ -106,15 +116,15 @@ A;
 									
 			<div class=" " style ="margin-left:30px">
 				<img src = "images/touxiang2.jpg" style ="width:60px;height:60px;border-radius:50%;margin-top:20px	">
-				<div style="width:600px;height:120px;background:#eeffee;border:1;position:relative;left:80px;top:-60px;border-radius:10px">
+				<div style="width:600px;height:100px;background:#eeffee;border:1;position:relative;left:80px;top:-60px;border-radius:10px">
 					<label style="padding-left:10px;margin-top:0;color:#777777"><?php echo $data_content['comment_time'];?></label> 
 					<label style="padding-left:10px;color:#777777">情绪：<?php echo $data_content['comment_quality'];?></label> 
 					<div>
-					<label style = "margin-left:20px;margin-top:0;font-size:14;font-family:Microsoft YaHei;color:#111111"><?php echo $data_content['comment_content'];?>  </label>
+					<label style = "margin-left:20px;margin-top:0;font-size:12;font-family:Microsoft YaHei;color:#111111"><?php echo $data_content['comment_content'];?>  </label>
 					</div>
 				</div>
 				<hr style="margin-top:-40">
-				<label style="color:red;margin-left:8px;margin-top:-68px"><?php echo $data_content['student_name' ];?></label> 
+				<label style="color:red;margin-left:8px;margin-top:-60px"><?php echo $data_content['student_name' ];?></label> 
 				
 				
 			</div>
@@ -128,7 +138,7 @@ A;
 					echo $page['html'];
 				?>
 				</div>
-				<div style="clear:both;"></div>			
+				<div style="clear:both;"></div>
 			</div>
 		</div>
 	</div>

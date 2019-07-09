@@ -29,7 +29,7 @@ $str=<<<A
                         <div class="king-header-list list1">
                             <ul>
                                 <li class="active">
-                                    <a href="../test/index.php" class="f14">
+                                    <a href="/test/index.php" class="f14">
                                         <span>首页</span>
                                     </a>
                                     <ul class="king-submenu"> </ul>
@@ -80,13 +80,13 @@ $str=<<<A
                         <div class="king-header-list list1">
                             <ul>
                                 <li class="active">
-                                    <a href="../test/index.php" class="f14">
+                                    <a href="/test/index.php" class="f14">
                                         <span>首页</span>
                                     </a>
                                     <ul class="king-submenu"> </ul>
                                 </li>
                                 <li class="active">
-                                    <a href="../test/person.php" class="f14">
+                                    <a href="/test/person.php" class="f14">
                                         <span>个人中心</span>
                                     </a>
                                     <ul class="king-submenu"> </ul>
@@ -98,7 +98,7 @@ $str=<<<A
                                     <ul class="king-submenu"> </ul>
                                 </li>
                                 <li>
-                                    <a href="../test/logout.php" class="f14">
+                                    <a href="/test/logout.php" class="f14">
                                         <span>注销</span>
                                     </a>
                                     <ul class="king-submenu"> </ul>
@@ -134,13 +134,13 @@ $str=<<<A
                         <div class="king-header-list list1">
                             <ul>
                                 <li class="active">
-                                    <a href="../test/index.php" class="f14">
+                                    <a href="/test/index.php" class="f14">
                                         <span>首页</span>
                                     </a>
                                     <ul class="king-submenu"> </ul>
                                 </li>
                                 <li>
-                                    <a href="../test/login.php" class="f14">
+                                    <a href="/test/login.php" class="f14">
                                         <span>登录</span>
                                     </a>
                                     <ul class="king-submenu"> </ul>

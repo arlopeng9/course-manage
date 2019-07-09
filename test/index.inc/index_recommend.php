@@ -269,7 +269,7 @@ $html9=<<<A
     <a href="course9.php"><img src="https://edu-image.nosdn.127.net/288647B04DED46F53F2154ABF422099B.jpg?imageView&thumbnail=426y240&quality=100&thumbnail=223x125&quality=100" alt=""></a>
     </div>
     <div class="package-content">
-    <h3><a href="course9.php" title="">宇宙新概念</a></h3>
+    <h3><a href="course9.php" title="">>宇宙新概念</a></h3>
     <p>上传时间：07 02 课程ID：20182022190
     </p>
     </div>
